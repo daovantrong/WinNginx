@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"C:/nginx_x64/deps/pcre2-10.45/build_x64/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

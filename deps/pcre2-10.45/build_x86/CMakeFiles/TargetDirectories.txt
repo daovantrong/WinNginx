@@ -1,7 +1,0 @@
-C:/WinNginx/deps/pcre2-10.45/build_x86/CMakeFiles/pcre2-8-static.dir
-C:/WinNginx/deps/pcre2-10.45/build_x86/CMakeFiles/pcre2-posix-static.dir
-C:/WinNginx/deps/pcre2-10.45/build_x86/CMakeFiles/edit_cache.dir
-C:/WinNginx/deps/pcre2-10.45/build_x86/CMakeFiles/rebuild_cache.dir
-C:/WinNginx/deps/pcre2-10.45/build_x86/CMakeFiles/list_install_components.dir
-C:/WinNginx/deps/pcre2-10.45/build_x86/CMakeFiles/install.dir
-C:/WinNginx/deps/pcre2-10.45/build_x86/CMakeFiles/install/local.dir

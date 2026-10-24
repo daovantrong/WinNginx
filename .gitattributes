@@ -1,2 +1,43 @@
-# Auto detect text files and perform LF normalization
+# ============================================================
+# .gitattributes for WinNginx
+# Quy định chuẩn line endings (CRLF / LF) và bảo vệ file binary
+# ============================================================
+
+# Mặc định tự động nhận diện file text và chuẩn hóa
 * text=auto
+
+# 1. Các file Windows / MSVC bắt buộc CRLF
+*.bat           text eol=crlf
+*.cmd           text eol=crlf
+*.ps1           text eol=crlf
+*.sln           text eol=crlf
+*.vcxproj       text eol=crlf
+*.vcxproj.filters text eol=crlf
+*.rc            text eol=crlf
+
+# 2. Các file C/C++ source code, cấu hình và tài liệu
+*.c             text
+*.h             text
+*.md            text
+*.json          text
+*.txt           text
+*.conf          text
+*.types         text
+
+# 3. Các file Unix shell / script bắt buộc LF
+*.sh            text eol=lf
+*.pl            text eol=lf
+*.py            text eol=lf
+
+# 4. Binary files - Bảo vệ tuyệt đối, Git không được can thiệp byte
+*.exe           binary
+*.dll           binary
+*.lib           binary
+*.pdb           binary
+*.ico           binary
+*.png           binary
+*.jpg           binary
+*.jpeg          binary
+*.gif           binary
+*.tar.gz        binary
+*.zip           binary

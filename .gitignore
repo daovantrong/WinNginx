@@ -1,0 +1,118 @@
+# ============================================================
+# .gitignore for WinNginx
+# "Lớp phòng thủ thứ 2" - Tự động bỏ qua mọi file tạm/rác khi Git track
+# ============================================================
+
+# 1. MSBuild & Visual Studio build outputs
+build/
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ww]in32/
+
+# 2. Intermediate compiler and linker artifacts
+*.obj
+*.o
+*.pdb
+*.ilk
+*.iobj
+*.ipdb
+*.tlog
+*.recipe
+*.res
+*.pch
+*.idb
+*.aps
+*.map
+*.exp
+
+# 3. Visual Studio IDE & Editor user settings / caches
+.vs/
+*.suo
+*.user
+*.userosv
+*.sln.docstates
+*.opendb
+*.db
+*.VC.db
+*.VC.opendb
+*.ipch
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
+*.sublime-workspace
+
+# 4. Crash dumps & diagnostics
+*.dmp
+*.mdmp
+*.crash
+*.stackdump
+
+# 5. Nginx runtime logs & PID files
+# Bỏ qua mọi file phát sinh trong thư mục logs, nhưng giữ lại file .gitkeep
+**/logs/*
+!**/logs/
+!**/logs/.gitkeep
+*.log
+*.pid
+
+# 6. Nginx runtime cache & temporary buffers
+# Bỏ qua mọi cache temp nhiều cấp do Nginx/FastCGI/Proxy tạo ra
+**/temp/*/*
+**/temp/*/**
+!**/temp/**/.gitkeep
+
+# 7. Intermediate files inside deps
+# Bỏ qua các thư mục build trung gian của PCRE2/Zlib
+deps/*/build*/
+deps/*/build_*/
+deps/**/CMakeFiles/
+deps/**/CMakeCache.txt
+deps/**/cmake_install.cmake
+deps/**/CTestTestfile.cmake
+# Bỏ qua bộ test đồ sộ (~1.1GB) của OpenSSL
+deps/openssl_*/tests/
+# Bỏ qua file nén tải về nếu chưa xóa
+deps/*.tar.gz
+deps/*.zip
+deps/*.tgz
+deps/*.7z
+
+# 8. Backup, editor swap & temporary files
+*.bak
+*.tmp
+*.temp
+*~
+*.swp
+*.swo
+.*.swp
+.*.swo
+*.orig
+*.rej
+
+# 9. Python bytecode & cache
+__pycache__/
+*.py[cod]
+
+# 10. Windows & OS metadata
+[Tt]humbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# ============================================================
+# WHITELIST: Đảm bảo không bao giờ bị ignore nhầm
+# ============================================================
+!nginx-1.31.8-bin/nginx.exe
+!nginx-1.31.8-bin/nginx_x86.exe
+!nginx-1.31.8-bin/conf/
+!nginx-1.31.8-bin/html/
+!nginx-1.31.8-bin/contrib/
+!nginx-1.31.8-bin/docs/
+!**/.gitkeep

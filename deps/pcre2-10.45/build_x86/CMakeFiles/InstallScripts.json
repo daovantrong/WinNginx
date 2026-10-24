@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"C:/WinNginx/deps/pcre2-10.45/build_x86/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

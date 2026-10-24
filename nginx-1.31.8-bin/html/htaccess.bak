@@ -1,5 +1,0 @@
-AuthType Basic
-AuthName "Restricted Area"
-AuthUserFile c:/nginx_x64/html/.htpasswd
-Require valid-user
-DirectoryIndex custom.html
