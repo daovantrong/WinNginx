@@ -1,0 +1,7 @@
+C:/WinNginx/deps/zlib_x86/lib/zlib.lib
+C:/WinNginx/deps/zlib_x86/bin/zlib.dll
+C:/WinNginx/deps/zlib_x86/lib/zlibstatic.lib
+C:/WinNginx/deps/zlib_x86/include/zconf.h
+C:/WinNginx/deps/zlib_x86/include/zlib.h
+C:/WinNginx/deps/zlib_x86/share/man/man3/zlib.3
+C:/WinNginx/deps/zlib_x86/share/pkgconfig/zlib.pc

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <!-- ===== core ===== -->
+    <Filter Include="core">
+      <UniqueIdentifier>{1A2B3C4D-5E6F-7890-ABCD-EF1234567800}</UniqueIdentifier>
+    </Filter>
+    <!-- ===== event ===== -->
+    <Filter Include="event">
+      <UniqueIdentifier>{1A2B3C4D-5E6F-7890-ABCD-EF1234567801}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="event\modules">
+      <UniqueIdentifier>{1A2B3C4D-5E6F-7890-ABCD-EF1234567802}</UniqueIdentifier>
+    </Filter>
+    <!-- ===== os\win32 ===== -->
+    <Filter Include="os\win32">
+      <UniqueIdentifier>{1A2B3C4D-5E6F-7890-ABCD-EF1234567803}</UniqueIdentifier>
+    </Filter>
+    <!-- ===== http ===== -->
+    <Filter Include="http">
+      <UniqueIdentifier>{1A2B3C4D-5E6F-7890-ABCD-EF1234567804}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http\modules">
+      <UniqueIdentifier>{1A2B3C4D-5E6F-7890-ABCD-EF1234567805}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http\v2">
+      <UniqueIdentifier>{1A2B3C4D-5E6F-7890-ABCD-EF1234567806}</UniqueIdentifier>
+    </Filter>
+    <!-- ===== objs (generated) ===== -->
+    <Filter Include="objs">
+      <UniqueIdentifier>{1A2B3C4D-5E6F-7890-ABCD-EF1234567807}</UniqueIdentifier>
+    </Filter>
+    <!-- ===== resources ===== -->
+    <Filter Include="resources">
+      <UniqueIdentifier>{1A2B3C4D-5E6F-7890-ABCD-EF1234567808}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- core -->
+    <ClCompile Include="$(NginxSrcDir)\src\core\nginx.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_log.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_palloc.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_array.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_list.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_hash.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_buf.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_queue.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_output_chain.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_string.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_parse.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_parse_time.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_inet.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_file.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_crc32.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_murmurhash.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_siphash.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_md5.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_sha1.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_rbtree.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_radix_tree.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_slab.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_times.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_shmtx.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_connection.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_cycle.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_spinlock.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_rwlock.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_cpuinfo.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_conf_file.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_module.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_resolver.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_open_file_cache.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_crypt.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_proxy_protocol.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_syslog.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_json.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_json_parse.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_json_unescape.c"><Filter>core</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_regex.c"><Filter>core</Filter></ClCompile>
+
+    <!-- event -->
+    <ClCompile Include="$(NginxSrcDir)\src\event\ngx_event.c"><Filter>event</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\event\ngx_event_timer.c"><Filter>event</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\event\ngx_event_posted.c"><Filter>event</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\event\ngx_event_accept.c"><Filter>event</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\event\ngx_event_udp.c"><Filter>event</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\event\ngx_event_connect.c"><Filter>event</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\event\ngx_event_pipe.c"><Filter>event</Filter></ClCompile>
+
+    <!-- event\modules -->
+    <ClCompile Include="$(NginxSrcDir)\src\event\modules\ngx_win32_select_module.c"><Filter>event\modules</Filter></ClCompile>
+
+    <!-- os\win32 -->
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_errno.c"><Filter>os\win32</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_alloc.c"><Filter>os\win32</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_files.c"><Filter>os\win32</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_shmem.c"><Filter>os\win32</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_time.c"><Filter>os\win32</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_process.c"><Filter>os\win32</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_thread.c"><Filter>os\win32</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_socket.c"><Filter>os\win32</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_wsarecv.c"><Filter>os\win32</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_wsarecv_chain.c"><Filter>os\win32</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_udp_wsarecv.c"><Filter>os\win32</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_wsasend.c"><Filter>os\win32</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_wsasend_chain.c"><Filter>os\win32</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_win32_init.c"><Filter>os\win32</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_user.c"><Filter>os\win32</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_dlopen.c"><Filter>os\win32</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_event_log.c"><Filter>os\win32</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_process_cycle.c"><Filter>os\win32</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_stat.c"><Filter>os\win32</Filter></ClCompile>
+
+    <!-- http -->
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http.c"><Filter>http</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_core_module.c"><Filter>http</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_special_response.c"><Filter>http</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_request.c"><Filter>http</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_parse.c"><Filter>http</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_request_body.c"><Filter>http</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_variables.c"><Filter>http</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_script.c"><Filter>http</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_upstream.c"><Filter>http</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_upstream_round_robin.c"><Filter>http</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_file_cache.c"><Filter>http</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_huff_decode.c"><Filter>http</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_huff_encode.c"><Filter>http</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_priority.c"><Filter>http</Filter></ClCompile>
+
+    <!-- http\modules -->
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_log_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_static_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_autoindex_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_index_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_mirror_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_try_files_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_auth_basic_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_auth_request_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_access_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_limit_conn_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_limit_req_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_geo_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_map_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_split_clients_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_referer_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_rewrite_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_ssl_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_proxy_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_fastcgi_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_uwsgi_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_scgi_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_memcached_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_realip_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_gzip_filter_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_gzip_static_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_sub_filter_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_addition_filter_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_charset_filter_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_ssi_filter_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_userid_filter_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_headers_filter_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_copy_filter_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_range_filter_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_not_modified_filter_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_chunked_filter_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_slice_filter_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_write_filter_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_header_filter_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_browser_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_upstream_hash_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_upstream_ip_hash_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_upstream_least_conn_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_upstream_random_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_upstream_keepalive_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_upstream_zone_module.c"><Filter>http\modules</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_empty_gif_module.c"><Filter>http\modules</Filter></ClCompile>
+
+    <!-- http\v2 -->
+    <ClCompile Include="$(NginxSrcDir)\src\http\v2\ngx_http_v2.c"><Filter>http\v2</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\v2\ngx_http_v2_table.c"><Filter>http\v2</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\v2\ngx_http_v2_encode.c"><Filter>http\v2</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\v2\ngx_http_v2_filter_module.c"><Filter>http\v2</Filter></ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\v2\ngx_http_v2_module.c"><Filter>http\v2</Filter></ClCompile>
+
+    <!-- objs -->
+    <ClCompile Include="$(NginxObjsDir)\ngx_modules.c"><Filter>objs</Filter></ClCompile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ResourceCompile Include="$(NginxSrcDir)\src\os\win32\nginx.rc"><Filter>resources</Filter></ResourceCompile>
+  </ItemGroup>
+</Project>

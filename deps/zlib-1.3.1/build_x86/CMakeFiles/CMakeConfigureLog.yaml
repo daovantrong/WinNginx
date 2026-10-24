@@ -1,0 +1,1709 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
+      - "CMakeLists.txt:4 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "C compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cl"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/vcpackages/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/Roslyn/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Team Tools/Performance Tools/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/Shared/Common/VSPerfCollectionTools/vs2019/"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/devinit/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x86/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/"
+      - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/Trong/.gemini/antigravity/bin/"
+      - "C:/Users/Trong/AppData/Roaming/Antigravity/bin/"
+      - "C:/Program Files/Python314/Scripts/"
+      - "C:/Program Files/Python314/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Microsoft SQL Server/130/Tools/Binn/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/zWebsrv/server/php/8.5/"
+      - "C:/zWebsrv/server/apache/bin/"
+      - "C:/zWebsrv/server/mysql/bin/"
+      - "C:/zWebsrv/server/nginx/"
+      - "C:/zWebsrv/server/postgresql/bin/"
+      - "C:/zWebsrv/server/redis/"
+      - "C:/zWebsrv/server/win-acme/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Devin/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/WireGuard/"
+      - "C:/Users/Trong/.local/bin/"
+      - "C:/Users/Trong/AppData/Roaming/npm/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Memurai/"
+      - "C:/Users/Trong/.cargo/bin/"
+      - "C:/Users/Trong/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Trong/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Trong/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/Trong/AppData/Local/Microsoft/WinGet/Links/"
+      - "C:/Users/Trong/AppData/Local/Programs/Antigravity IDE/bin/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/cl.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/cl.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\VC\\VCPackages"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Team Tools\\Performance Tools"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Common\\VSPerfCollectionTools\\vs2019\\"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\FSharp\\Tools"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\Tools\\devinit"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\x86"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\\\MSBuild\\Current\\Bin"
+        - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\Tools\\"
+        - "C:\\Program Files\\PowerShell\\7"
+        - "C:/Users/Trong/.gemini/antigravity/bin"
+        - "C:\\Users\\Trong\\AppData\\Roaming\\Antigravity\\bin"
+        - "C:\\Program Files\\Python314\\Scripts\\"
+        - "C:\\Program Files\\Python314\\"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\zWebsrv\\server\\php\\8.5"
+        - "C:\\zWebsrv\\server\\apache\\bin"
+        - "C:\\zWebsrv\\server\\mysql\\bin"
+        - "C:\\zWebsrv\\server\\nginx"
+        - "C:\\zWebsrv\\server\\postgresql\\bin"
+        - "C:\\zWebsrv\\server\\redis"
+        - "C:\\zWebsrv\\server\\win-acme"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Devin\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\WireGuard\\"
+        - "C:\\Users\\Trong\\.local\\bin\\"
+        - "C:\\Users\\Trong\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Memurai\\"
+        - "C:\\Users\\Trong\\.cargo\\bin"
+        - "C:\\Users\\Trong\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Trong\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Trong\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\Trong\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Users\\Trong\\AppData\\Local\\Programs\\Antigravity IDE\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+      CMAKE_INSTALL_PREFIX: "c:\\WinNginx\\deps\\zlib_x86"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\VC\\VCPackages"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Team Tools\\Performance Tools"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Common\\VSPerfCollectionTools\\vs2019\\"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\FSharp\\Tools"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\Tools\\devinit"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\x86"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\\\MSBuild\\Current\\Bin"
+        - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\Tools\\"
+        - "C:\\Program Files\\PowerShell\\7"
+        - "C:/Users/Trong/.gemini/antigravity/bin"
+        - "C:\\Users\\Trong\\AppData\\Roaming\\Antigravity\\bin"
+        - "C:\\Program Files\\Python314\\Scripts\\"
+        - "C:\\Program Files\\Python314\\"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\zWebsrv\\server\\php\\8.5"
+        - "C:\\zWebsrv\\server\\apache\\bin"
+        - "C:\\zWebsrv\\server\\mysql\\bin"
+        - "C:\\zWebsrv\\server\\nginx"
+        - "C:\\zWebsrv\\server\\postgresql\\bin"
+        - "C:\\zWebsrv\\server\\redis"
+        - "C:\\zWebsrv\\server\\win-acme"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Devin\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\WireGuard\\"
+        - "C:\\Users\\Trong\\.local\\bin\\"
+        - "C:\\Users\\Trong\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Memurai\\"
+        - "C:\\Users\\Trong\\.cargo\\bin"
+        - "C:\\Users\\Trong\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Trong\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Trong\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\Trong\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Users\\Trong\\AppData\\Local\\Programs\\Antigravity IDE\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+      CMAKE_INSTALL_PREFIX: "c:\\WinNginx\\deps\\zlib_x86"
+      ENV{INCLUDE}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\ATLMFC\\include"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\include"
+        - "C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\include\\um"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\ucrt"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\shared"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\um"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\winrt"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\cppwinrt"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/cl.exe 
+      Build flags: /MT
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30159 for x86
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCCompilerId.c
+      Microsoft (R) Incremental Linker Version 14.29.30159.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCCompilerId.exe 
+      CMakeCCompilerId.obj 
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/4.3.0/CompilerIdC/CMakeCCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:1347 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\WinNginx\\deps\\zlib-1.3.1\\build_x86\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:4 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/vcpackages/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/Roslyn/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Team Tools/Performance Tools/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/Shared/Common/VSPerfCollectionTools/vs2019/"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/devinit/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x86/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/"
+      - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/Trong/.gemini/antigravity/bin/"
+      - "C:/Users/Trong/AppData/Roaming/Antigravity/bin/"
+      - "C:/Program Files/Python314/Scripts/"
+      - "C:/Program Files/Python314/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Microsoft SQL Server/130/Tools/Binn/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/zWebsrv/server/php/8.5/"
+      - "C:/zWebsrv/server/apache/bin/"
+      - "C:/zWebsrv/server/mysql/bin/"
+      - "C:/zWebsrv/server/nginx/"
+      - "C:/zWebsrv/server/postgresql/bin/"
+      - "C:/zWebsrv/server/redis/"
+      - "C:/zWebsrv/server/win-acme/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Devin/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/WireGuard/"
+      - "C:/Users/Trong/.local/bin/"
+      - "C:/Users/Trong/AppData/Roaming/npm/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Memurai/"
+      - "C:/Users/Trong/.cargo/bin/"
+      - "C:/Users/Trong/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Trong/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Trong/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/Trong/AppData/Local/Microsoft/WinGet/Links/"
+      - "C:/Users/Trong/AppData/Local/Programs/Antigravity IDE/bin/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/link.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\VC\\VCPackages"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Team Tools\\Performance Tools"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Common\\VSPerfCollectionTools\\vs2019\\"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\FSharp\\Tools"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\Tools\\devinit"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\x86"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\\\MSBuild\\Current\\Bin"
+        - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\Tools\\"
+        - "C:\\Program Files\\PowerShell\\7"
+        - "C:/Users/Trong/.gemini/antigravity/bin"
+        - "C:\\Users\\Trong\\AppData\\Roaming\\Antigravity\\bin"
+        - "C:\\Program Files\\Python314\\Scripts\\"
+        - "C:\\Program Files\\Python314\\"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\zWebsrv\\server\\php\\8.5"
+        - "C:\\zWebsrv\\server\\apache\\bin"
+        - "C:\\zWebsrv\\server\\mysql\\bin"
+        - "C:\\zWebsrv\\server\\nginx"
+        - "C:\\zWebsrv\\server\\postgresql\\bin"
+        - "C:\\zWebsrv\\server\\redis"
+        - "C:\\zWebsrv\\server\\win-acme"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Devin\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\WireGuard\\"
+        - "C:\\Users\\Trong\\.local\\bin\\"
+        - "C:\\Users\\Trong\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Memurai\\"
+        - "C:\\Users\\Trong\\.cargo\\bin"
+        - "C:\\Users\\Trong\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Trong\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Trong\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\Trong\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Users\\Trong\\AppData\\Local\\Programs\\Antigravity IDE\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+      CMAKE_INSTALL_PREFIX: "c:\\WinNginx\\deps\\zlib_x86"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:4 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/vcpackages/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/Roslyn/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Team Tools/Performance Tools/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/Shared/Common/VSPerfCollectionTools/vs2019/"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/devinit/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x86/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/"
+      - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/Trong/.gemini/antigravity/bin/"
+      - "C:/Users/Trong/AppData/Roaming/Antigravity/bin/"
+      - "C:/Program Files/Python314/Scripts/"
+      - "C:/Program Files/Python314/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Microsoft SQL Server/130/Tools/Binn/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/zWebsrv/server/php/8.5/"
+      - "C:/zWebsrv/server/apache/bin/"
+      - "C:/zWebsrv/server/mysql/bin/"
+      - "C:/zWebsrv/server/nginx/"
+      - "C:/zWebsrv/server/postgresql/bin/"
+      - "C:/zWebsrv/server/redis/"
+      - "C:/zWebsrv/server/win-acme/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Devin/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/WireGuard/"
+      - "C:/Users/Trong/.local/bin/"
+      - "C:/Users/Trong/AppData/Roaming/npm/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Memurai/"
+      - "C:/Users/Trong/.cargo/bin/"
+      - "C:/Users/Trong/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Trong/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Trong/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/Trong/AppData/Local/Microsoft/WinGet/Links/"
+      - "C:/Users/Trong/AppData/Local/Programs/Antigravity IDE/bin/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/lld-link"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/vcpackages/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/vcpackages/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/vcpackages/lld-link"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/lld-link"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/lld-link"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/Roslyn/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/Roslyn/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/Roslyn/lld-link"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Team Tools/Performance Tools/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Team Tools/Performance Tools/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Team Tools/Performance Tools/lld-link"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/Shared/Common/VSPerfCollectionTools/vs2019/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/Shared/Common/VSPerfCollectionTools/vs2019/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/Shared/Common/VSPerfCollectionTools/vs2019/lld-link"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/lld-link"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/lld-link"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/devinit/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/devinit/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/devinit/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x86/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x86/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x86/lld-link"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/lld-link"
+      - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/lld-link.com"
+      - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/lld-link.exe"
+      - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/lld-link"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/lld-link"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/lld-link"
+      - "C:/Program Files/PowerShell/7/lld-link.com"
+      - "C:/Program Files/PowerShell/7/lld-link.exe"
+      - "C:/Program Files/PowerShell/7/lld-link"
+      - "C:/Users/Trong/.gemini/antigravity/bin/lld-link.com"
+      - "C:/Users/Trong/.gemini/antigravity/bin/lld-link.exe"
+      - "C:/Users/Trong/.gemini/antigravity/bin/lld-link"
+      - "C:/Users/Trong/AppData/Roaming/Antigravity/bin/lld-link.com"
+      - "C:/Users/Trong/AppData/Roaming/Antigravity/bin/lld-link.exe"
+      - "C:/Users/Trong/AppData/Roaming/Antigravity/bin/lld-link"
+      - "C:/Program Files/Python314/Scripts/lld-link.com"
+      - "C:/Program Files/Python314/Scripts/lld-link.exe"
+      - "C:/Program Files/Python314/Scripts/lld-link"
+      - "C:/Program Files/Python314/lld-link.com"
+      - "C:/Program Files/Python314/lld-link.exe"
+      - "C:/Program Files/Python314/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/Microsoft SQL Server/130/Tools/Binn/lld-link.com"
+      - "C:/Program Files/Microsoft SQL Server/130/Tools/Binn/lld-link.exe"
+      - "C:/Program Files/Microsoft SQL Server/130/Tools/Binn/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/lld-link"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/lld-link.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/lld-link.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/lld-link"
+      - "C:/Program Files/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Program Files/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Program Files/Microsoft VS Code/bin/lld-link"
+      - "C:/ProgramData/chocolatey/bin/lld-link.com"
+      - "C:/ProgramData/chocolatey/bin/lld-link.exe"
+      - "C:/ProgramData/chocolatey/bin/lld-link"
+      - "C:/zWebsrv/server/php/8.5/lld-link.com"
+      - "C:/zWebsrv/server/php/8.5/lld-link.exe"
+      - "C:/zWebsrv/server/php/8.5/lld-link"
+      - "C:/zWebsrv/server/apache/bin/lld-link.com"
+      - "C:/zWebsrv/server/apache/bin/lld-link.exe"
+      - "C:/zWebsrv/server/apache/bin/lld-link"
+      - "C:/zWebsrv/server/mysql/bin/lld-link.com"
+      - "C:/zWebsrv/server/mysql/bin/lld-link.exe"
+      - "C:/zWebsrv/server/mysql/bin/lld-link"
+      - "C:/zWebsrv/server/nginx/lld-link.com"
+      - "C:/zWebsrv/server/nginx/lld-link.exe"
+      - "C:/zWebsrv/server/nginx/lld-link"
+      - "C:/zWebsrv/server/postgresql/bin/lld-link.com"
+      - "C:/zWebsrv/server/postgresql/bin/lld-link.exe"
+      - "C:/zWebsrv/server/postgresql/bin/lld-link"
+      - "C:/zWebsrv/server/redis/lld-link.com"
+      - "C:/zWebsrv/server/redis/lld-link.exe"
+      - "C:/zWebsrv/server/redis/lld-link"
+      - "C:/zWebsrv/server/win-acme/lld-link.com"
+      - "C:/zWebsrv/server/win-acme/lld-link.exe"
+      - "C:/zWebsrv/server/win-acme/lld-link"
+      - "C:/Program Files/cursor/resources/app/bin/lld-link.com"
+      - "C:/Program Files/cursor/resources/app/bin/lld-link.exe"
+      - "C:/Program Files/cursor/resources/app/bin/lld-link"
+      - "C:/Program Files/Devin/bin/lld-link.com"
+      - "C:/Program Files/Devin/bin/lld-link.exe"
+      - "C:/Program Files/Devin/bin/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/WireGuard/lld-link.com"
+      - "C:/Program Files/WireGuard/lld-link.exe"
+      - "C:/Program Files/WireGuard/lld-link"
+      - "C:/Users/Trong/.local/bin/lld-link.com"
+      - "C:/Users/Trong/.local/bin/lld-link.exe"
+      - "C:/Users/Trong/.local/bin/lld-link"
+      - "C:/Users/Trong/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/Trong/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/Trong/AppData/Roaming/npm/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/Memurai/lld-link.com"
+      - "C:/Program Files/Memurai/lld-link.exe"
+      - "C:/Program Files/Memurai/lld-link"
+      - "C:/Users/Trong/.cargo/bin/lld-link.com"
+      - "C:/Users/Trong/.cargo/bin/lld-link.exe"
+      - "C:/Users/Trong/.cargo/bin/lld-link"
+      - "C:/Users/Trong/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/Trong/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/Trong/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/Trong/AppData/Local/GitHubDesktop/bin/lld-link.com"
+      - "C:/Users/Trong/AppData/Local/GitHubDesktop/bin/lld-link.exe"
+      - "C:/Users/Trong/AppData/Local/GitHubDesktop/bin/lld-link"
+      - "C:/Users/Trong/AppData/Local/Programs/Antigravity/bin/lld-link.com"
+      - "C:/Users/Trong/AppData/Local/Programs/Antigravity/bin/lld-link.exe"
+      - "C:/Users/Trong/AppData/Local/Programs/Antigravity/bin/lld-link"
+      - "C:/Users/Trong/AppData/Local/Microsoft/WinGet/Links/lld-link.com"
+      - "C:/Users/Trong/AppData/Local/Microsoft/WinGet/Links/lld-link.exe"
+      - "C:/Users/Trong/AppData/Local/Microsoft/WinGet/Links/lld-link"
+      - "C:/Users/Trong/AppData/Local/Programs/Antigravity IDE/bin/lld-link.com"
+      - "C:/Users/Trong/AppData/Local/Programs/Antigravity IDE/bin/lld-link.exe"
+      - "C:/Users/Trong/AppData/Local/Programs/Antigravity IDE/bin/lld-link"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/lld-link"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/lld-link"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\VC\\VCPackages"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Team Tools\\Performance Tools"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Common\\VSPerfCollectionTools\\vs2019\\"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\FSharp\\Tools"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\Tools\\devinit"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\x86"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\\\MSBuild\\Current\\Bin"
+        - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\Tools\\"
+        - "C:\\Program Files\\PowerShell\\7"
+        - "C:/Users/Trong/.gemini/antigravity/bin"
+        - "C:\\Users\\Trong\\AppData\\Roaming\\Antigravity\\bin"
+        - "C:\\Program Files\\Python314\\Scripts\\"
+        - "C:\\Program Files\\Python314\\"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\zWebsrv\\server\\php\\8.5"
+        - "C:\\zWebsrv\\server\\apache\\bin"
+        - "C:\\zWebsrv\\server\\mysql\\bin"
+        - "C:\\zWebsrv\\server\\nginx"
+        - "C:\\zWebsrv\\server\\postgresql\\bin"
+        - "C:\\zWebsrv\\server\\redis"
+        - "C:\\zWebsrv\\server\\win-acme"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Devin\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\WireGuard\\"
+        - "C:\\Users\\Trong\\.local\\bin\\"
+        - "C:\\Users\\Trong\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Memurai\\"
+        - "C:\\Users\\Trong\\.cargo\\bin"
+        - "C:\\Users\\Trong\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Trong\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Trong\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\Trong\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Users\\Trong\\AppData\\Local\\Programs\\Antigravity IDE\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+      CMAKE_INSTALL_PREFIX: "c:\\WinNginx\\deps\\zlib_x86"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:4 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/vcpackages/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/Roslyn/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Team Tools/Performance Tools/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/Shared/Common/VSPerfCollectionTools/vs2019/"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/devinit/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x86/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/"
+      - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/Trong/.gemini/antigravity/bin/"
+      - "C:/Users/Trong/AppData/Roaming/Antigravity/bin/"
+      - "C:/Program Files/Python314/Scripts/"
+      - "C:/Program Files/Python314/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Microsoft SQL Server/130/Tools/Binn/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/zWebsrv/server/php/8.5/"
+      - "C:/zWebsrv/server/apache/bin/"
+      - "C:/zWebsrv/server/mysql/bin/"
+      - "C:/zWebsrv/server/nginx/"
+      - "C:/zWebsrv/server/postgresql/bin/"
+      - "C:/zWebsrv/server/redis/"
+      - "C:/zWebsrv/server/win-acme/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Devin/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/WireGuard/"
+      - "C:/Users/Trong/.local/bin/"
+      - "C:/Users/Trong/AppData/Roaming/npm/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Memurai/"
+      - "C:/Users/Trong/.cargo/bin/"
+      - "C:/Users/Trong/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Trong/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Trong/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/Trong/AppData/Local/Microsoft/WinGet/Links/"
+      - "C:/Users/Trong/AppData/Local/Programs/Antigravity IDE/bin/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/link.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\VC\\VCPackages"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Team Tools\\Performance Tools"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Common\\VSPerfCollectionTools\\vs2019\\"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\FSharp\\Tools"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\Tools\\devinit"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\x86"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\\\MSBuild\\Current\\Bin"
+        - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\Tools\\"
+        - "C:\\Program Files\\PowerShell\\7"
+        - "C:/Users/Trong/.gemini/antigravity/bin"
+        - "C:\\Users\\Trong\\AppData\\Roaming\\Antigravity\\bin"
+        - "C:\\Program Files\\Python314\\Scripts\\"
+        - "C:\\Program Files\\Python314\\"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\zWebsrv\\server\\php\\8.5"
+        - "C:\\zWebsrv\\server\\apache\\bin"
+        - "C:\\zWebsrv\\server\\mysql\\bin"
+        - "C:\\zWebsrv\\server\\nginx"
+        - "C:\\zWebsrv\\server\\postgresql\\bin"
+        - "C:\\zWebsrv\\server\\redis"
+        - "C:\\zWebsrv\\server\\win-acme"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Devin\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\WireGuard\\"
+        - "C:\\Users\\Trong\\.local\\bin\\"
+        - "C:\\Users\\Trong\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Memurai\\"
+        - "C:\\Users\\Trong\\.cargo\\bin"
+        - "C:\\Users\\Trong\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Trong\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Trong\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\Trong\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Users\\Trong\\AppData\\Local\\Programs\\Antigravity IDE\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+      CMAKE_INSTALL_PREFIX: "c:\\WinNginx\\deps\\zlib_x86"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:4 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/vcpackages/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/Roslyn/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Team Tools/Performance Tools/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/Shared/Common/VSPerfCollectionTools/vs2019/"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/devinit/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x86/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/"
+      - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/Trong/.gemini/antigravity/bin/"
+      - "C:/Users/Trong/AppData/Roaming/Antigravity/bin/"
+      - "C:/Program Files/Python314/Scripts/"
+      - "C:/Program Files/Python314/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Microsoft SQL Server/130/Tools/Binn/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/zWebsrv/server/php/8.5/"
+      - "C:/zWebsrv/server/apache/bin/"
+      - "C:/zWebsrv/server/mysql/bin/"
+      - "C:/zWebsrv/server/nginx/"
+      - "C:/zWebsrv/server/postgresql/bin/"
+      - "C:/zWebsrv/server/redis/"
+      - "C:/zWebsrv/server/win-acme/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Devin/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/WireGuard/"
+      - "C:/Users/Trong/.local/bin/"
+      - "C:/Users/Trong/AppData/Roaming/npm/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Memurai/"
+      - "C:/Users/Trong/.cargo/bin/"
+      - "C:/Users/Trong/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Trong/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Trong/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/Trong/AppData/Local/Microsoft/WinGet/Links/"
+      - "C:/Users/Trong/AppData/Local/Programs/Antigravity IDE/bin/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/mt.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/mt.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/mt"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/vcpackages/mt.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/vcpackages/mt.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/vcpackages/mt"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/mt.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/mt.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/mt"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/mt.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/mt.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/mt"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/Roslyn/mt.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/Roslyn/mt.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/Roslyn/mt"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Team Tools/Performance Tools/mt.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Team Tools/Performance Tools/mt.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Team Tools/Performance Tools/mt"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/Shared/Common/VSPerfCollectionTools/vs2019/mt.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/Shared/Common/VSPerfCollectionTools/vs2019/mt.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/Shared/Common/VSPerfCollectionTools/vs2019/mt"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/mt.com"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/mt.exe"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/mt"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/mt.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/mt.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/mt"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/devinit/mt.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/devinit/mt.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/devinit/mt"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/mt.com"
+    found: "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/mt.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\VC\\VCPackages"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Team Tools\\Performance Tools"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Common\\VSPerfCollectionTools\\vs2019\\"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\FSharp\\Tools"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\Tools\\devinit"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\x86"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\\\MSBuild\\Current\\Bin"
+        - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\Tools\\"
+        - "C:\\Program Files\\PowerShell\\7"
+        - "C:/Users/Trong/.gemini/antigravity/bin"
+        - "C:\\Users\\Trong\\AppData\\Roaming\\Antigravity\\bin"
+        - "C:\\Program Files\\Python314\\Scripts\\"
+        - "C:\\Program Files\\Python314\\"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\zWebsrv\\server\\php\\8.5"
+        - "C:\\zWebsrv\\server\\apache\\bin"
+        - "C:\\zWebsrv\\server\\mysql\\bin"
+        - "C:\\zWebsrv\\server\\nginx"
+        - "C:\\zWebsrv\\server\\postgresql\\bin"
+        - "C:\\zWebsrv\\server\\redis"
+        - "C:\\zWebsrv\\server\\win-acme"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Devin\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\WireGuard\\"
+        - "C:\\Users\\Trong\\.local\\bin\\"
+        - "C:\\Users\\Trong\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Memurai\\"
+        - "C:\\Users\\Trong\\.cargo\\bin"
+        - "C:\\Users\\Trong\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Trong\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Trong\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\Trong\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Users\\Trong\\AppData\\Local\\Programs\\Antigravity IDE\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+      CMAKE_INSTALL_PREFIX: "c:\\WinNginx\\deps\\zlib_x86"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:4 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/vcpackages/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/Roslyn/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Team Tools/Performance Tools/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/Shared/Common/VSPerfCollectionTools/vs2019/"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/devinit/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x86/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/"
+      - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/Trong/.gemini/antigravity/bin/"
+      - "C:/Users/Trong/AppData/Roaming/Antigravity/bin/"
+      - "C:/Program Files/Python314/Scripts/"
+      - "C:/Program Files/Python314/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Microsoft SQL Server/130/Tools/Binn/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/zWebsrv/server/php/8.5/"
+      - "C:/zWebsrv/server/apache/bin/"
+      - "C:/zWebsrv/server/mysql/bin/"
+      - "C:/zWebsrv/server/nginx/"
+      - "C:/zWebsrv/server/postgresql/bin/"
+      - "C:/zWebsrv/server/redis/"
+      - "C:/zWebsrv/server/win-acme/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Devin/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/WireGuard/"
+      - "C:/Users/Trong/.local/bin/"
+      - "C:/Users/Trong/AppData/Roaming/npm/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Memurai/"
+      - "C:/Users/Trong/.cargo/bin/"
+      - "C:/Users/Trong/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Trong/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Trong/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/Trong/AppData/Local/Microsoft/WinGet/Links/"
+      - "C:/Users/Trong/AppData/Local/Programs/Antigravity IDE/bin/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/lib.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\VC\\VCPackages"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Team Tools\\Performance Tools"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Common\\VSPerfCollectionTools\\vs2019\\"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\FSharp\\Tools"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\Tools\\devinit"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\x86"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\\\MSBuild\\Current\\Bin"
+        - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\Tools\\"
+        - "C:\\Program Files\\PowerShell\\7"
+        - "C:/Users/Trong/.gemini/antigravity/bin"
+        - "C:\\Users\\Trong\\AppData\\Roaming\\Antigravity\\bin"
+        - "C:\\Program Files\\Python314\\Scripts\\"
+        - "C:\\Program Files\\Python314\\"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\zWebsrv\\server\\php\\8.5"
+        - "C:\\zWebsrv\\server\\apache\\bin"
+        - "C:\\zWebsrv\\server\\mysql\\bin"
+        - "C:\\zWebsrv\\server\\nginx"
+        - "C:\\zWebsrv\\server\\postgresql\\bin"
+        - "C:\\zWebsrv\\server\\redis"
+        - "C:\\zWebsrv\\server\\win-acme"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Devin\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\WireGuard\\"
+        - "C:\\Users\\Trong\\.local\\bin\\"
+        - "C:\\Users\\Trong\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Memurai\\"
+        - "C:\\Users\\Trong\\.cargo\\bin"
+        - "C:\\Users\\Trong\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Trong\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Trong\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\Trong\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Users\\Trong\\AppData\\Local\\Programs\\Antigravity IDE\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+      CMAKE_INSTALL_PREFIX: "c:\\WinNginx\\deps\\zlib_x86"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC.cmake:592 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC.cmake:565 (__windows_compiler_msvc_enable_rc)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC-C.cmake:5 (__windows_compiler_msvc)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCInformation.cmake:48 (include)"
+      - "CMakeLists.txt:4 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/vcpackages/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/Roslyn/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Team Tools/Performance Tools/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/Shared/Common/VSPerfCollectionTools/vs2019/"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/devinit/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x86/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/"
+      - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/Trong/.gemini/antigravity/bin/"
+      - "C:/Users/Trong/AppData/Roaming/Antigravity/bin/"
+      - "C:/Program Files/Python314/Scripts/"
+      - "C:/Program Files/Python314/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Microsoft SQL Server/130/Tools/Binn/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/zWebsrv/server/php/8.5/"
+      - "C:/zWebsrv/server/apache/bin/"
+      - "C:/zWebsrv/server/mysql/bin/"
+      - "C:/zWebsrv/server/nginx/"
+      - "C:/zWebsrv/server/postgresql/bin/"
+      - "C:/zWebsrv/server/redis/"
+      - "C:/zWebsrv/server/win-acme/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Devin/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/WireGuard/"
+      - "C:/Users/Trong/.local/bin/"
+      - "C:/Users/Trong/AppData/Roaming/npm/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Memurai/"
+      - "C:/Users/Trong/.cargo/bin/"
+      - "C:/Users/Trong/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Trong/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Trong/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/Trong/AppData/Local/Microsoft/WinGet/Links/"
+      - "C:/Users/Trong/AppData/Local/Programs/Antigravity IDE/bin/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/WinNginx/deps/zlib_x86/bin/"
+      - "C:/WinNginx/deps/zlib_x86/sbin/"
+      - "C:/WinNginx/deps/zlib_x86/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/rc.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/rc.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/rc"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/vcpackages/rc.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/vcpackages/rc.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/VC/vcpackages/rc"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/rc.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/rc.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/rc"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/rc.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/rc.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/rc"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/Roslyn/rc.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/Roslyn/rc.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/Roslyn/rc"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Team Tools/Performance Tools/rc.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Team Tools/Performance Tools/rc.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Team Tools/Performance Tools/rc"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/Shared/Common/VSPerfCollectionTools/vs2019/rc.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/Shared/Common/VSPerfCollectionTools/vs2019/rc.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/Shared/Common/VSPerfCollectionTools/vs2019/rc"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/rc.com"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/rc.exe"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/rc"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/rc.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/rc.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/rc"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/devinit/rc.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/devinit/rc.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/devinit/rc"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/rc.com"
+    found: "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/rc.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\VC\\VCPackages"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Team Tools\\Performance Tools"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Common\\VSPerfCollectionTools\\vs2019\\"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\FSharp\\Tools"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\Tools\\devinit"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\x86"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\\\MSBuild\\Current\\Bin"
+        - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\Tools\\"
+        - "C:\\Program Files\\PowerShell\\7"
+        - "C:/Users/Trong/.gemini/antigravity/bin"
+        - "C:\\Users\\Trong\\AppData\\Roaming\\Antigravity\\bin"
+        - "C:\\Program Files\\Python314\\Scripts\\"
+        - "C:\\Program Files\\Python314\\"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\zWebsrv\\server\\php\\8.5"
+        - "C:\\zWebsrv\\server\\apache\\bin"
+        - "C:\\zWebsrv\\server\\mysql\\bin"
+        - "C:\\zWebsrv\\server\\nginx"
+        - "C:\\zWebsrv\\server\\postgresql\\bin"
+        - "C:\\zWebsrv\\server\\redis"
+        - "C:\\zWebsrv\\server\\win-acme"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Devin\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\WireGuard\\"
+        - "C:\\Users\\Trong\\.local\\bin\\"
+        - "C:\\Users\\Trong\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Memurai\\"
+        - "C:\\Users\\Trong\\.cargo\\bin"
+        - "C:\\Users\\Trong\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Trong\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Trong\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\Trong\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Users\\Trong\\AppData\\Local\\Programs\\Antigravity IDE\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+      CMAKE_INSTALL_PREFIX: "C:/WinNginx/deps/zlib_x86"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/WinNginx/deps/zlib_x86"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/CMakeScratch/TryCompile-cp5hqq"
+      binary: "C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/CMakeScratch/TryCompile-cp5hqq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/MT"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/CMakeScratch/TryCompile-cp5hqq'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_dc422\\fast
+        	"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_dc422.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_dc422.dir\\build
+        Building C object CMakeFiles/cmTC_dc422.dir/CMakeCCompilerABI.c.obj
+        	"C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_dc422.dir\\CMakeCCompilerABI.c.obj.d --working-dir=C:\\WinNginx\\deps\\zlib-1.3.1\\build_x86\\CMakeFiles\\CMakeScratch\\TryCompile-cp5hqq --filter-prefix="Note: including file: " -- C:\\PROGRA~2\\MICROS~3\\2019\\ENTERP~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\Trong\\AppData\\Local\\Temp\\nm8C3C.tmp
+        cl : Command line warning D9025 : overriding '/MT' with '/MDd'
+        CMakeCCompilerABI.c
+        Linking C executable cmTC_dc422.exe
+        	"C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1929 --intdir=CMakeFiles\\cmTC_dc422.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe --manifests -- C:\\PROGRA~2\\MICROS~3\\2019\\ENTERP~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_dc422.dir\\objects1.rsp @C:\\Users\\Trong\\AppData\\Local\\Temp\\nm8CC9.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_dc422.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_dc422.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_dc422.dir/manifest.res CMakeFiles\\cmTC_dc422.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~2\\MICROS~3\\2019\\ENTERP~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_dc422.dir\\objects1.rsp /out:cmTC_dc422.exe /implib:cmTC_dc422.lib /pdb:C:\\WinNginx\\deps\\zlib-1.3.1\\build_x86\\CMakeFiles\\CMakeScratch\\TryCompile-cp5hqq\\cmTC_dc422.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_dc422.dir/intermediate.manifest CMakeFiles\\cmTC_dc422.dir/manifest.res
+        MT:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_dc422.dir/intermediate.manifest /out:CMakeFiles\\cmTC_dc422.dir/embed.manifest /notify_update
+        RC Pass 2:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_dc422.dir/manifest.res CMakeFiles\\cmTC_dc422.dir/manifest.rc
+        FINAL LINK:
+        C:\\PROGRA~2\\MICROS~3\\2019\\ENTERP~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_dc422.dir\\objects1.rsp /out:cmTC_dc422.exe /implib:cmTC_dc422.lib /pdb:C:\\WinNginx\\deps\\zlib-1.3.1\\build_x86\\CMakeFiles\\CMakeScratch\\TryCompile-cp5hqq\\cmTC_dc422.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_dc422.dir/intermediate.manifest CMakeFiles\\cmTC_dc422.dir/manifest.res
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/PROGRA~2/MICROS~3/2019/ENTERP~1/VC/Tools/MSVC/1429~1.301/bin/Hostx86/x86/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Running the C compiler's linker: "C:/PROGRA~2/MICROS~3/2019/ENTERP~1/VC/Tools/MSVC/1429~1.301/bin/Hostx86/x86/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.29.30159.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckIncludeFile.cmake:174 (try_compile)"
+      - "CMakeLists.txt:22 (check_include_file)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/CMakeScratch/TryCompile-vzlxig"
+      binary: "C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/CMakeScratch/TryCompile-vzlxig"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/MT"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/CMakeScratch/TryCompile-vzlxig'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_1ad4d\\fast
+        	"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_1ad4d.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_1ad4d.dir\\build
+        Building C object CMakeFiles/cmTC_1ad4d.dir/CheckIncludeFile.c.obj
+        	"C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_1ad4d.dir\\CheckIncludeFile.c.obj.d --working-dir=C:\\WinNginx\\deps\\zlib-1.3.1\\build_x86\\CMakeFiles\\CMakeScratch\\TryCompile-vzlxig --filter-prefix="Note: including file: " -- C:\\PROGRA~2\\MICROS~3\\2019\\ENTERP~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\Trong\\AppData\\Local\\Temp\\nm9014.tmp
+        cl : Command line warning D9025 : overriding '/MT' with '/MDd'
+        CheckIncludeFile.c
+        Linking C executable cmTC_1ad4d.exe
+        	"C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1929 --intdir=CMakeFiles\\cmTC_1ad4d.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe --manifests -- C:\\PROGRA~2\\MICROS~3\\2019\\ENTERP~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_1ad4d.dir\\objects1.rsp @C:\\Users\\Trong\\AppData\\Local\\Temp\\nm90A2.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_1ad4d.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_1ad4d.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_1ad4d.dir/manifest.res CMakeFiles\\cmTC_1ad4d.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~2\\MICROS~3\\2019\\ENTERP~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_1ad4d.dir\\objects1.rsp /out:cmTC_1ad4d.exe /implib:cmTC_1ad4d.lib /pdb:C:\\WinNginx\\deps\\zlib-1.3.1\\build_x86\\CMakeFiles\\CMakeScratch\\TryCompile-vzlxig\\cmTC_1ad4d.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_1ad4d.dir/intermediate.manifest CMakeFiles\\cmTC_1ad4d.dir/manifest.res
+        MT:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_1ad4d.dir/intermediate.manifest /out:CMakeFiles\\cmTC_1ad4d.dir/embed.manifest /notify_update
+        RC Pass 2:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_1ad4d.dir/manifest.res CMakeFiles\\cmTC_1ad4d.dir/manifest.rc
+        FINAL LINK:
+        C:\\PROGRA~2\\MICROS~3\\2019\\ENTERP~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_1ad4d.dir\\objects1.rsp /out:cmTC_1ad4d.exe /implib:cmTC_1ad4d.lib /pdb:C:\\WinNginx\\deps\\zlib-1.3.1\\build_x86\\CMakeFiles\\CMakeScratch\\TryCompile-vzlxig\\cmTC_1ad4d.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_1ad4d.dir/intermediate.manifest CMakeFiles\\cmTC_1ad4d.dir/manifest.res
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckIncludeFile.cmake:174 (try_compile)"
+      - "CMakeLists.txt:23 (check_include_file)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/CMakeScratch/TryCompile-bdvaxb"
+      binary: "C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/CMakeScratch/TryCompile-bdvaxb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/MT"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/CMakeScratch/TryCompile-bdvaxb'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_3d92c\\fast
+        	"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_3d92c.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_3d92c.dir\\build
+        Building C object CMakeFiles/cmTC_3d92c.dir/CheckIncludeFile.c.obj
+        	"C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_3d92c.dir\\CheckIncludeFile.c.obj.d --working-dir=C:\\WinNginx\\deps\\zlib-1.3.1\\build_x86\\CMakeFiles\\CMakeScratch\\TryCompile-bdvaxb --filter-prefix="Note: including file: " -- C:\\PROGRA~2\\MICROS~3\\2019\\ENTERP~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\Trong\\AppData\\Local\\Temp\\nm93ED.tmp
+        cl : Command line warning D9025 : overriding '/MT' with '/MDd'
+        CheckIncludeFile.c
+        Linking C executable cmTC_3d92c.exe
+        	"C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1929 --intdir=CMakeFiles\\cmTC_3d92c.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe --manifests -- C:\\PROGRA~2\\MICROS~3\\2019\\ENTERP~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_3d92c.dir\\objects1.rsp @C:\\Users\\Trong\\AppData\\Local\\Temp\\nm948A.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_3d92c.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_3d92c.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_3d92c.dir/manifest.res CMakeFiles\\cmTC_3d92c.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~2\\MICROS~3\\2019\\ENTERP~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_3d92c.dir\\objects1.rsp /out:cmTC_3d92c.exe /implib:cmTC_3d92c.lib /pdb:C:\\WinNginx\\deps\\zlib-1.3.1\\build_x86\\CMakeFiles\\CMakeScratch\\TryCompile-bdvaxb\\cmTC_3d92c.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_3d92c.dir/intermediate.manifest CMakeFiles\\cmTC_3d92c.dir/manifest.res
+        MT:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_3d92c.dir/intermediate.manifest /out:CMakeFiles\\cmTC_3d92c.dir/embed.manifest /notify_update
+        RC Pass 2:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_3d92c.dir/manifest.res CMakeFiles\\cmTC_3d92c.dir/manifest.rc
+        FINAL LINK:
+        C:\\PROGRA~2\\MICROS~3\\2019\\ENTERP~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_3d92c.dir\\objects1.rsp /out:cmTC_3d92c.exe /implib:cmTC_3d92c.lib /pdb:C:\\WinNginx\\deps\\zlib-1.3.1\\build_x86\\CMakeFiles\\CMakeScratch\\TryCompile-bdvaxb\\cmTC_3d92c.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_3d92c.dir/intermediate.manifest CMakeFiles\\cmTC_3d92c.dir/manifest.res
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckIncludeFile.cmake:174 (try_compile)"
+      - "CMakeLists.txt:24 (check_include_file)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/CMakeScratch/TryCompile-aihwxe"
+      binary: "C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/CMakeScratch/TryCompile-aihwxe"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/MT"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/CMakeScratch/TryCompile-aihwxe'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_31bda\\fast
+        	"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_31bda.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_31bda.dir\\build
+        Building C object CMakeFiles/cmTC_31bda.dir/CheckIncludeFile.c.obj
+        	"C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_31bda.dir\\CheckIncludeFile.c.obj.d --working-dir=C:\\WinNginx\\deps\\zlib-1.3.1\\build_x86\\CMakeFiles\\CMakeScratch\\TryCompile-aihwxe --filter-prefix="Note: including file: " -- C:\\PROGRA~2\\MICROS~3\\2019\\ENTERP~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\Trong\\AppData\\Local\\Temp\\nm97A6.tmp
+        cl : Command line warning D9025 : overriding '/MT' with '/MDd'
+        CheckIncludeFile.c
+        Linking C executable cmTC_31bda.exe
+        	"C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1929 --intdir=CMakeFiles\\cmTC_31bda.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe --manifests -- C:\\PROGRA~2\\MICROS~3\\2019\\ENTERP~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_31bda.dir\\objects1.rsp @C:\\Users\\Trong\\AppData\\Local\\Temp\\nm9833.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_31bda.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_31bda.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_31bda.dir/manifest.res CMakeFiles\\cmTC_31bda.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~2\\MICROS~3\\2019\\ENTERP~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_31bda.dir\\objects1.rsp /out:cmTC_31bda.exe /implib:cmTC_31bda.lib /pdb:C:\\WinNginx\\deps\\zlib-1.3.1\\build_x86\\CMakeFiles\\CMakeScratch\\TryCompile-aihwxe\\cmTC_31bda.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_31bda.dir/intermediate.manifest CMakeFiles\\cmTC_31bda.dir/manifest.res
+        MT:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_31bda.dir/intermediate.manifest /out:CMakeFiles\\cmTC_31bda.dir/embed.manifest /notify_update
+        RC Pass 2:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_31bda.dir/manifest.res CMakeFiles\\cmTC_31bda.dir/manifest.rc
+        FINAL LINK:
+        C:\\PROGRA~2\\MICROS~3\\2019\\ENTERP~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_31bda.dir\\objects1.rsp /out:cmTC_31bda.exe /implib:cmTC_31bda.lib /pdb:C:\\WinNginx\\deps\\zlib-1.3.1\\build_x86\\CMakeFiles\\CMakeScratch\\TryCompile-aihwxe\\cmTC_31bda.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_31bda.dir/intermediate.manifest CMakeFiles\\cmTC_31bda.dir/manifest.res
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckTypeSize.cmake:348 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckTypeSize.cmake:481 (__check_type_size_impl)"
+      - "CMakeLists.txt:42 (check_type_size)"
+    checks:
+      - "Check size of off64_t"
+    directories:
+      source: "C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/CMakeScratch/TryCompile-n292gj"
+      binary: "C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/CMakeScratch/TryCompile-n292gj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/MT"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+    buildResult:
+      variable: "HAVE_OFF64_T"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/CMakeScratch/TryCompile-n292gj'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_90f96\\fast
+        	"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_90f96.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_90f96.dir\\build
+        Building C object CMakeFiles/cmTC_90f96.dir/OFF64_T.c.obj
+        	"C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_90f96.dir\\OFF64_T.c.obj.d --working-dir=C:\\WinNginx\\deps\\zlib-1.3.1\\build_x86\\CMakeFiles\\CMakeScratch\\TryCompile-n292gj --filter-prefix="Note: including file: " -- C:\\PROGRA~2\\MICROS~3\\2019\\ENTERP~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\Trong\\AppData\\Local\\Temp\\nm9B30.tmp
+        cl : Command line warning D9025 : overriding '/MT' with '/MDd'
+        OFF64_T.c
+        C:\\WinNginx\\deps\\zlib-1.3.1\\build_x86\\CMakeFiles\\CMakeScratch\\TryCompile-n292gj\\OFF64_T.c(29): error C2065: 'off64_t': undeclared identifier
+        C:\\WinNginx\\deps\\zlib-1.3.1\\build_x86\\CMakeFiles\\CMakeScratch\\TryCompile-n292gj\\OFF64_T.c(30): error C2065: 'off64_t': undeclared identifier
+        C:\\WinNginx\\deps\\zlib-1.3.1\\build_x86\\CMakeFiles\\CMakeScratch\\TryCompile-n292gj\\OFF64_T.c(31): error C2065: 'off64_t': undeclared identifier
+        C:\\WinNginx\\deps\\zlib-1.3.1\\build_x86\\CMakeFiles\\CMakeScratch\\TryCompile-n292gj\\OFF64_T.c(32): error C2065: 'off64_t': undeclared identifier
+        C:\\WinNginx\\deps\\zlib-1.3.1\\build_x86\\CMakeFiles\\CMakeScratch\\TryCompile-n292gj\\OFF64_T.c(33): error C2065: 'off64_t': undeclared identifier
+        NMAKE : fatal error U1077: '"C:\\Program Files\\CMake\\bin\\cmake.exe"' : return code '0x2'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\nmake.exe"' : return code '0x2'
+        Stop.
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckFunctionExists.cmake:167 (try_compile)"
+      - "CMakeLists.txt:51 (check_function_exists)"
+    checks:
+      - "Looking for fseeko"
+    directories:
+      source: "C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/CMakeScratch/TryCompile-degfdh"
+      binary: "C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/CMakeScratch/TryCompile-degfdh"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/MT"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+    buildResult:
+      variable: "HAVE_FSEEKO"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/CMakeScratch/TryCompile-degfdh'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_117b7\\fast
+        	"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_117b7.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_117b7.dir\\build
+        Building C object CMakeFiles/cmTC_117b7.dir/CheckFunctionExists.c.obj
+        	"C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_117b7.dir\\CheckFunctionExists.c.obj.d --working-dir=C:\\WinNginx\\deps\\zlib-1.3.1\\build_x86\\CMakeFiles\\CMakeScratch\\TryCompile-degfdh --filter-prefix="Note: including file: " -- C:\\PROGRA~2\\MICROS~3\\2019\\ENTERP~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\Trong\\AppData\\Local\\Temp\\nm9C88.tmp
+        cl : Command line warning D9025 : overriding '/MT' with '/MDd'
+        CheckFunctionExists.c
+        Linking C executable cmTC_117b7.exe
+        	"C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1929 --intdir=CMakeFiles\\cmTC_117b7.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe --manifests -- C:\\PROGRA~2\\MICROS~3\\2019\\ENTERP~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_117b7.dir\\objects1.rsp @C:\\Users\\Trong\\AppData\\Local\\Temp\\nm9D06.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_117b7.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_117b7.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_117b7.dir/manifest.res CMakeFiles\\cmTC_117b7.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~2\\MICROS~3\\2019\\ENTERP~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_117b7.dir\\objects1.rsp /out:cmTC_117b7.exe /implib:cmTC_117b7.lib /pdb:C:\\WinNginx\\deps\\zlib-1.3.1\\build_x86\\CMakeFiles\\CMakeScratch\\TryCompile-degfdh\\cmTC_117b7.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_117b7.dir/intermediate.manifest CMakeFiles\\cmTC_117b7.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~2\\MICROS~3\\2019\\ENTERP~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_117b7.dir\\objects1.rsp /out:cmTC_117b7.exe /implib:cmTC_117b7.lib /pdb:C:\\WinNginx\\deps\\zlib-1.3.1\\build_x86\\CMakeFiles\\CMakeScratch\\TryCompile-degfdh\\cmTC_117b7.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_117b7.dir/intermediate.manifest CMakeFiles\\cmTC_117b7.dir/manifest.res" failed (exit code 1120) with the following output:
+        CheckFunctionExists.c.obj : error LNK2019: unresolved external symbol _fseeko referenced in function _main\x0d
+        cmTC_117b7.exe : fatal error LNK1120: 1 unresolved externals\x0d
+        NMAKE : fatal error U1077: '"C:\\Program Files\\CMake\\bin\\cmake.exe"' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\nmake.exe"' : return code '0x2'
+        Stop.
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckIncludeFile.cmake:174 (try_compile)"
+      - "CMakeLists.txt:59 (check_include_file)"
+    checks:
+      - "Looking for unistd.h"
+    directories:
+      source: "C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/CMakeScratch/TryCompile-o4ojdy"
+      binary: "C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/CMakeScratch/TryCompile-o4ojdy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/MT"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+    buildResult:
+      variable: "Z_HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/CMakeScratch/TryCompile-o4ojdy'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_18f6b\\fast
+        	"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_18f6b.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_18f6b.dir\\build
+        Building C object CMakeFiles/cmTC_18f6b.dir/CheckIncludeFile.c.obj
+        	"C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_18f6b.dir\\CheckIncludeFile.c.obj.d --working-dir=C:\\WinNginx\\deps\\zlib-1.3.1\\build_x86\\CMakeFiles\\CMakeScratch\\TryCompile-o4ojdy --filter-prefix="Note: including file: " -- C:\\PROGRA~2\\MICROS~3\\2019\\ENTERP~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\Trong\\AppData\\Local\\Temp\\nm9E9B.tmp
+        cl : Command line warning D9025 : overriding '/MT' with '/MDd'
+        CheckIncludeFile.c
+        C:\\WinNginx\\deps\\zlib-1.3.1\\build_x86\\CMakeFiles\\CMakeScratch\\TryCompile-o4ojdy\\CheckIncludeFile.c(1): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+        NMAKE : fatal error U1077: '"C:\\Program Files\\CMake\\bin\\cmake.exe"' : return code '0x2'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\nmake.exe"' : return code '0x2'
+        Stop.
+        
+      exitCode: 2
+...

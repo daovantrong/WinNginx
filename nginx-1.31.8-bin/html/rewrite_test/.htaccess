@@ -1,0 +1,2 @@
+Header set X-My-Header "Hello from htaccess"
+ExpiresActive On

@@ -1,0 +1,7 @@
+C:/nginx_x64/deps/zlib_x64/lib/zlib.lib
+C:/nginx_x64/deps/zlib_x64/bin/zlib.dll
+C:/nginx_x64/deps/zlib_x64/lib/zlibstatic.lib
+C:/nginx_x64/deps/zlib_x64/include/zconf.h
+C:/nginx_x64/deps/zlib_x64/include/zlib.h
+C:/nginx_x64/deps/zlib_x64/share/man/man3/zlib.3
+C:/nginx_x64/deps/zlib_x64/share/pkgconfig/zlib.pc

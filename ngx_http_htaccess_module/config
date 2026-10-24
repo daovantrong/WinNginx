@@ -1,0 +1,14 @@
+ngx_addon_name=ngx_http_htaccess_module
+
+if test -n "$ngx_module_link"; then
+    ngx_module_type=HTTP
+    ngx_module_name=ngx_http_htaccess_module
+    ngx_module_srcs="$ngx_addon_dir/src/ngx_http_htaccess_module.c $ngx_addon_dir/src/filesystem/os/win32/file.c"
+    ngx_module_deps="$ngx_addon_dir/src/ngx_http_htaccess_module.h $ngx_addon_dir/src/filesystem/file.h"
+
+    . auto/module
+else
+    HTTP_MODULES="$HTTP_MODULES ngx_http_htaccess_module"
+    NGX_ADDON_SRCS="$NGX_ADDON_SRCS $ngx_addon_dir/src/ngx_http_htaccess_module.c $ngx_addon_dir/src/filesystem/os/win32/file.c"
+    NGX_ADDON_DEPS="$NGX_ADDON_DEPS $ngx_addon_dir/src/ngx_http_htaccess_module.h $ngx_addon_dir/src/filesystem/file.h"
+fi

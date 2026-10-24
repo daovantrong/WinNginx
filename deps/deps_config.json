@@ -1,0 +1,5 @@
+﻿{
+    "PCRE2_INSTALL":  "D:\\WinNginx\\deps\\pcre2_x86",
+    "ZLIB_INSTALL":  "D:\\WinNginx\\deps\\zlib_x86",
+    "OPENSSL_INSTALL":  "D:\\WinNginx\\deps\\openssl_x86"
+}

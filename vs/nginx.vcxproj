@@ -1,0 +1,540 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+
+  
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration><ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration></ItemGroup>
+
+  
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}</ProjectGuid>
+    <RootNamespace>nginx</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>nginx</ProjectName>
+  </PropertyGroup>
+
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup><PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup><Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+
+  
+  <PropertyGroup Label="DepsConfig">
+    
+    <NginxSrcDir>$(SolutionDir)..\nginx-1.31.8</NginxSrcDir>
+    <NginxObjsDir>$(NginxSrcDir)\objs</NginxObjsDir>
+    <DepsDir>$(SolutionDir)..\deps</DepsDir>
+    <Pcre2Dir>$(DepsDir)\pcre2_x64</Pcre2Dir>
+    <ZlibDir>$(DepsDir)\zlib_x64</ZlibDir>
+    
+    <OpenSslDir>$(DepsDir)\openssl_x64</OpenSslDir>
+  </PropertyGroup>
+
+  
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)..\build\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\build\$(Configuration)\obj\</IntDir>
+    <TargetName>nginx</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+
+  
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      
+      <DisableSpecificWarnings>4100;4127;4131;4244;4245;4389;4702;4706;4214;4305;4013;4028;4024;4113;4047;4090;4996;4311;4312;4090;4152</DisableSpecificWarnings>
+      <PreprocessorDefinitions>NGX_DEBUG;
+        NGX_WIN32;
+        WIN32;
+        _WIN32;
+        _WIN64;
+        NDEBUG;
+        _CRT_SECURE_NO_WARNINGS;
+        _CRT_NONSTDC_NO_WARNINGS;
+        FD_SETSIZE=1024;
+        NGX_PCRE2;
+        PCRE2_STATIC;
+        PCRE2_CODE_UNIT_WIDTH=8;
+        NGX_HAVE_IOCP;
+        %(PreprocessorDefinitions)
+      </PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>
+        $(NginxSrcDir)\src\core;
+        $(NginxSrcDir)\src\event;
+        $(NginxSrcDir)\src\event\modules;
+        $(NginxSrcDir)\src\event\quic;
+        $(NginxSrcDir)\src\os\win32;
+        $(NginxSrcDir)\src\http;
+        $(NginxSrcDir)\src\http\modules;
+        $(NginxSrcDir)\src\http\v2;
+        $(NginxSrcDir)\src\http\v3;
+        $(NginxSrcDir)\src\mail;
+        $(NginxSrcDir)\src\stream;
+        $(NginxSrcDir)\src\misc;
+        $(NginxObjsDir);
+        $(Pcre2Dir)\include;
+        $(ZlibDir)\include;
+        $(OpenSslDir)\include;
+        %(AdditionalIncludeDirectories)
+      </AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>
+        $(Pcre2Dir)\lib\pcre2-8-static.lib;
+        $(ZlibDir)\lib\zlibstatic.lib;
+        $(OpenSslDir)\lib\VC\x64\MT\libssl.lib;
+        $(OpenSslDir)\lib\VC\x64\MT\libcrypto.lib;
+        kernel32.lib;
+        user32.lib;
+        ws2_32.lib;
+        mswsock.lib;
+        advapi32.lib;
+        crypt32.lib;
+        %(AdditionalDependencies)
+      </AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>
+        $(NginxSrcDir)\src\core;
+        $(NginxSrcDir)\src\event;
+        $(NginxSrcDir)\src\os\win32;
+        $(NginxObjsDir);
+        %(AdditionalIncludeDirectories)
+      </AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+
+  
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4100;4127;4131;4244;4245;4389;4702;4706;4214;4305;4013;4028;4024;4113;4047;4090;4996;4311;4312;4090;4152</DisableSpecificWarnings>
+      <PreprocessorDefinitions>NGX_DEBUG;
+        NGX_WIN32;
+        WIN32;
+        _WIN32;
+        _WIN64;
+        _DEBUG;
+        _CRT_SECURE_NO_WARNINGS;
+        _CRT_NONSTDC_NO_WARNINGS;
+        FD_SETSIZE=1024;
+        NGX_PCRE2;
+        PCRE2_STATIC;
+        PCRE2_CODE_UNIT_WIDTH=8;
+        NGX_HAVE_IOCP;
+        %(PreprocessorDefinitions)
+      </PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>
+        $(NginxSrcDir)\src\core;
+        $(NginxSrcDir)\src\event;
+        $(NginxSrcDir)\src\event\modules;
+        $(NginxSrcDir)\src\event\quic;
+        $(NginxSrcDir)\src\os\win32;
+        $(NginxSrcDir)\src\http;
+        $(NginxSrcDir)\src\http\modules;
+        $(NginxSrcDir)\src\http\v2;
+        $(NginxSrcDir)\src\http\v3;
+        $(NginxSrcDir)\src\mail;
+        $(NginxSrcDir)\src\stream;
+        $(NginxSrcDir)\src\misc;
+        $(NginxObjsDir);
+        $(Pcre2Dir)\include;
+        $(ZlibDir)\include;
+        $(OpenSslDir)\include;
+        %(AdditionalIncludeDirectories)
+      </AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>
+        $(Pcre2Dir)\lib\pcre2-8-static.lib;
+        $(ZlibDir)\lib\zlibstatic.lib;
+        $(OpenSslDir)\lib\VC\x64\MDd\libssl.lib;
+        $(OpenSslDir)\lib\VC\x64\MDd\libcrypto.lib;
+        kernel32.lib;
+        user32.lib;
+        ws2_32.lib;
+        mswsock.lib;
+        advapi32.lib;
+        crypt32.lib;
+        %(AdditionalDependencies)
+      </AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>
+        $(NginxSrcDir)\src\core;
+        $(NginxSrcDir)\src\event;
+        $(NginxSrcDir)\src\os\win32;
+        $(NginxObjsDir);
+        %(AdditionalIncludeDirectories)
+      </AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+
+  
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4100;4127;4131;4244;4245;4389;4702;4706;4214;4305;4013;4028;4024;4113;4047;4090;4996;4311;4312;4090;4152</DisableSpecificWarnings>
+      <PreprocessorDefinitions>NGX_DEBUG;
+        NGX_WIN32;
+        WIN32;
+        _WIN32;
+        
+        _DEBUG;
+        _CRT_SECURE_NO_WARNINGS;
+        _CRT_NONSTDC_NO_WARNINGS;
+        FD_SETSIZE=1024;
+        NGX_PCRE2;
+        PCRE2_STATIC;
+        PCRE2_CODE_UNIT_WIDTH=8;
+        NGX_HAVE_IOCP;
+        %(PreprocessorDefinitions)
+      </PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>
+        $(NginxSrcDir)\src\core;
+        $(NginxSrcDir)\src\event;
+        $(NginxSrcDir)\src\event\modules;
+        $(NginxSrcDir)\src\event\quic;
+        $(NginxSrcDir)\src\os\win32;
+        $(NginxSrcDir)\src\http;
+        $(NginxSrcDir)\src\http\modules;
+        $(NginxSrcDir)\src\http\v2;
+        $(NginxSrcDir)\src\http\v3;
+        $(NginxSrcDir)\src\mail;
+        $(NginxSrcDir)\src\stream;
+        $(NginxSrcDir)\src\misc;
+        $(NginxObjsDir);
+        $(Pcre2Dir)\include;
+        $(ZlibDir)\include;
+        $(OpenSslDir)\include;
+        %(AdditionalIncludeDirectories)
+      </AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>$(DepsDir)\pcre2_x86\lib\pcre2-8-static.lib;$(DepsDir)\zlib_x86\lib\zlibstatic.lib;$(DepsDir)\openssl_x86\lib\VC\x86\MT\libssl.lib;$(DepsDir)\openssl_x86\lib\VC\x86\MT\libcrypto.lib;kernel32.lib;user32.lib;ws2_32.lib;mswsock.lib;advapi32.lib;crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>
+        $(NginxSrcDir)\src\core;
+        $(NginxSrcDir)\src\event;
+        $(NginxSrcDir)\src\os\win32;
+        $(NginxObjsDir);
+        %(AdditionalIncludeDirectories)
+      </AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup><ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      
+      <DisableSpecificWarnings>4100;4127;4131;4244;4245;4389;4702;4706;4214;4305;4013;4028;4024;4113;4047;4090;4996;4311;4312;4090;4152</DisableSpecificWarnings>
+      <PreprocessorDefinitions>NGX_DEBUG;
+        NGX_WIN32;
+        WIN32;
+        _WIN32;
+        
+        NDEBUG;
+        _CRT_SECURE_NO_WARNINGS;
+        _CRT_NONSTDC_NO_WARNINGS;
+        FD_SETSIZE=1024;
+        NGX_PCRE2;
+        PCRE2_STATIC;
+        PCRE2_CODE_UNIT_WIDTH=8;
+        NGX_HAVE_IOCP;
+        %(PreprocessorDefinitions)
+      </PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>
+        $(NginxSrcDir)\src\core;
+        $(NginxSrcDir)\src\event;
+        $(NginxSrcDir)\src\event\modules;
+        $(NginxSrcDir)\src\event\quic;
+        $(NginxSrcDir)\src\os\win32;
+        $(NginxSrcDir)\src\http;
+        $(NginxSrcDir)\src\http\modules;
+        $(NginxSrcDir)\src\http\v2;
+        $(NginxSrcDir)\src\http\v3;
+        $(NginxSrcDir)\src\mail;
+        $(NginxSrcDir)\src\stream;
+        $(NginxSrcDir)\src\misc;
+        $(NginxObjsDir);
+        $(Pcre2Dir)\include;
+        $(ZlibDir)\include;
+        $(OpenSslDir)\include;
+        %(AdditionalIncludeDirectories)
+      </AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>$(DepsDir)\pcre2_x86\lib\pcre2-8-static.lib;$(DepsDir)\zlib_x86\lib\zlibstatic.lib;$(DepsDir)\openssl_x86\lib\VC\x86\MT\libssl.lib;$(DepsDir)\openssl_x86\lib\VC\x86\MT\libcrypto.lib;kernel32.lib;user32.lib;ws2_32.lib;mswsock.lib;advapi32.lib;crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>
+        $(NginxSrcDir)\src\core;
+        $(NginxSrcDir)\src\event;
+        $(NginxSrcDir)\src\os\win32;
+        $(NginxObjsDir);
+        %(AdditionalIncludeDirectories)
+      </AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup><ItemGroup Label="core">
+    <ClCompile Include="$(NginxSrcDir)\src\core\nginx.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_log.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_palloc.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_array.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_list.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_hash.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_buf.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_queue.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_output_chain.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_string.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_parse.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_parse_time.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_inet.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_file.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_crc32.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_murmurhash.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_siphash.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_md5.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_sha1.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_rbtree.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_radix_tree.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_slab.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_times.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_shmtx.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_connection.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_cycle.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_spinlock.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_rwlock.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_cpuinfo.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_conf_file.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_resolver.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_open_file_cache.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_crypt.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_proxy_protocol.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_syslog.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_json.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_json_parse.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_json_unescape.c" />
+  </ItemGroup>
+
+  <ItemGroup Label="event">
+    <ClCompile Include="$(NginxSrcDir)\src\event\ngx_event.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\event\ngx_event_timer.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\event\ngx_event_posted.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\event\ngx_event_accept.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\event\ngx_event_udp.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\event\ngx_event_connect.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\event\ngx_event_pipe.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\event\ngx_event_openssl.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\event\ngx_event_openssl_stapling.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\event\ngx_event_openssl_cache.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\event\modules\ngx_win32_select_module.c" />
+  </ItemGroup>
+
+  <ItemGroup Label="os_win32">
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_errno.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_alloc.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_files.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_shmem.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_time.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_process.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_thread.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_socket.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_wsarecv.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_wsarecv_chain.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_udp_wsarecv.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_wsasend.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_wsasend_chain.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_win32_init.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_user.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_dlopen.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_event_log.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_process_cycle.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_service.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\os\win32\ngx_stat.c" />
+  </ItemGroup>
+
+  <ItemGroup Label="http">
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_core_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_special_response.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_request.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_parse.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_request_body.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_variables.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_script.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_upstream.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_upstream_round_robin.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_file_cache.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_huff_decode.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_huff_encode.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_priority.c" />
+  </ItemGroup>
+
+  <ItemGroup Label="http_modules">
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_log_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_static_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_autoindex_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_index_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_mirror_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_try_files_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_auth_basic_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_auth_request_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_access_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_limit_conn_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_limit_req_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_geo_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_map_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_split_clients_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_referer_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_rewrite_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_ssl_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_proxy_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_proxy_v2_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_fastcgi_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_uwsgi_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_scgi_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_memcached_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_realip_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_gzip_filter_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_gzip_static_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_sub_filter_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_addition_filter_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_charset_filter_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_ssi_filter_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_userid_filter_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_headers_filter_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_copy_filter_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_range_filter_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_not_modified_filter_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_chunked_filter_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_slice_filter_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_write_filter_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\ngx_http_header_filter_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_browser_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_upstream_hash_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_upstream_ip_hash_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_upstream_least_conn_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_upstream_random_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_upstream_keepalive_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_empty_gif_module.c" />
+  </ItemGroup>
+
+  <ItemGroup Label="http_v2">
+    <ClCompile Include="$(NginxSrcDir)\src\http\v2\ngx_http_v2.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\v2\ngx_http_v2_table.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\v2\ngx_http_v2_encode.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\v2\ngx_http_v2_filter_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\src\http\v2\ngx_http_v2_module.c" />
+  </ItemGroup>
+
+  <ItemGroup Label="regex">
+    
+    <ClCompile Include="$(NginxSrcDir)\src\core\ngx_regex.c" />
+  </ItemGroup>
+
+  
+  <ItemGroup Label="objs">
+    <ClCompile Include="$(NginxObjsDir)\ngx_modules.c" />
+    <ClCompile Include="$(NginxSrcDir)\..\ngx_http_htaccess_module\src\ngx_http_htaccess_module.c" />
+    <ClCompile Include="$(NginxSrcDir)\..\ngx_http_htaccess_module\src\auth\auth_basic.c" />
+    <ClCompile Include="$(NginxSrcDir)\..\ngx_http_htaccess_module\src\cache\cache.c" />
+    <ClCompile Include="$(NginxSrcDir)\..\ngx_http_htaccess_module\src\filesystem\os\win32\file.c" />
+    <ClCompile Include="$(NginxSrcDir)\..\ngx_http_htaccess_module\src\parser\lexer.c" />
+    <ClCompile Include="$(NginxSrcDir)\..\ngx_http_htaccess_module\src\parser\parser.c" />
+    <ClCompile Include="$(NginxSrcDir)\..\ngx_http_htaccess_module\src\rewrite\condition.c" />
+    <ClCompile Include="$(NginxSrcDir)\..\ngx_http_htaccess_module\src\rewrite\rule.c" />
+    <ClCompile Include="$(NginxSrcDir)\..\ngx_http_htaccess_module\src\rewrite\variables.c" />
+  </ItemGroup>
+
+  
+  <ItemGroup Label="resources">
+    <ResourceCompile Include="$(NginxSrcDir)\src\os\win32\nginx.rc" />
+  </ItemGroup>
+
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+
+</Project>

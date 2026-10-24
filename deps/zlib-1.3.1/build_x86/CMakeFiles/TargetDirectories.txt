@@ -1,0 +1,10 @@
+C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/zlib.dir
+C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/zlibstatic.dir
+C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/example.dir
+C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/minigzip.dir
+C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/test.dir
+C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/edit_cache.dir
+C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/rebuild_cache.dir
+C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/list_install_components.dir
+C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/install.dir
+C:/WinNginx/deps/zlib-1.3.1/build_x86/CMakeFiles/install/local.dir

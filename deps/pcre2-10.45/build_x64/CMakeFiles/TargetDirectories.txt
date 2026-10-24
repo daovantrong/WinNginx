@@ -1,0 +1,7 @@
+C:/nginx_x64/deps/pcre2-10.45/build_x64/CMakeFiles/pcre2-8-static.dir
+C:/nginx_x64/deps/pcre2-10.45/build_x64/CMakeFiles/pcre2-posix-static.dir
+C:/nginx_x64/deps/pcre2-10.45/build_x64/CMakeFiles/edit_cache.dir
+C:/nginx_x64/deps/pcre2-10.45/build_x64/CMakeFiles/rebuild_cache.dir
+C:/nginx_x64/deps/pcre2-10.45/build_x64/CMakeFiles/list_install_components.dir
+C:/nginx_x64/deps/pcre2-10.45/build_x64/CMakeFiles/install.dir
+C:/nginx_x64/deps/pcre2-10.45/build_x64/CMakeFiles/install/local.dir

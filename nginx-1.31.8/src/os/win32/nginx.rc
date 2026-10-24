@@ -1,0 +1,38 @@
+// Copyright (C) Igor Sysoev
+// Copyright (C) Nginx, Inc.
+
+
+#include <winres.h>
+
+nginx   icon  discardable  "nginx.ico"
+
+1 VERSIONINFO
+FILEVERSION     1,31,8,0
+PRODUCTVERSION  1,31,8,0
+FILEFLAGSMASK   0x3fL
+FILEFLAGS       0x0L
+FILEOS          0x40004L
+FILETYPE        0x1L
+FILESUBTYPE     0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4"
+        BEGIN
+            VALUE "CompanyName",      "TRONG.PRO"
+            VALUE "FileDescription",  "Nginx Web Server for Windows (Native Service & .htaccess)"
+            VALUE "FileVersion",      "1.31.8.0"
+            VALUE "InternalName",     "nginx"
+            VALUE "OriginalFilename", "nginx.exe"
+            VALUE "ProductName",      "Nginx Windows Native"
+            VALUE "ProductVersion",   "1.31.8"
+            VALUE "Comments",         "Nginx for Windows with Native Apache .htaccess & Service Integration - https://trong.pro"
+            VALUE "Comment",          "Nginx for Windows with Native Apache .htaccess & Service Integration - https://trong.pro"
+            VALUE "LegalCopyright",   "Copyright (C) Igor Sysoev, Nginx, Inc., TRONG.PRO"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
