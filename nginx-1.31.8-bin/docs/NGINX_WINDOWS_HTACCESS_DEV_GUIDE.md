@@ -79,8 +79,8 @@ Trong quá trình phát triển và hoàn thiện, đã giải quyết **4 lỗi
 ### Bug 4: Link Tĩnh OpenSSL 3.5.7 Không Cần DLL (Static Standalone)
 - **Triệu chứng**: Nginx phụ thuộc vào `libcrypto-3-x64.dll` và `libssl-3-x64.dll` khi dùng import library mặc định (`libcrypto.lib` / `libssl.lib`).
 - **Giải pháp**:
-  - Chuyển cấu hình MSVC trong [`vs/nginx.vcxproj`](file:///D:/WinNginx/vs/nginx.vcxproj) sang liên kết tĩnh trực tiếp với `libssl_static.lib` và `libcrypto_static.lib`.
-  - Trên x86 Win32, trình biên dịch thiếu symbol CRT `__dtoul3_legacy`. Đã bổ sung alias/stub trong [`src/os/win32/ngx_win32_init.c`](file:///D:/WinNginx/nginx-1.31.8/src/os/win32/ngx_win32_init.c):
+  - Chuyển cấu hình MSVC trong [`vs/nginx.vcxproj`](../../vs/nginx.vcxproj) sang liên kết tĩnh trực tiếp với `libssl_static.lib` và `libcrypto_static.lib`.
+  - Trên x86 Win32, trình biên dịch thiếu symbol CRT `__dtoul3_legacy`. Đã bổ sung alias/stub trong [`src/os/win32/ngx_win32_init.c`](../../nginx-1.31.8/src/os/win32/ngx_win32_init.c):
     ```c
     #if defined(_WIN32) && !defined(_WIN64) && defined(_MSC_VER)
     #pragma comment(linker, "/alternatename:__dtoul3_legacy=___dtoul3_legacy")

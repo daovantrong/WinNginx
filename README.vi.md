@@ -16,7 +16,7 @@
 
 ## 🚀 Tính năng nổi bật
 
-- **Tầng Tương thích `.htaccess` Native:** Viết hoàn toàn bằng ngôn ngữ C ([`ngx_http_htaccess_module`](file:///D:/WinNginx/ngx_http_htaccess_module)), can thiệp vào vòng đời xử lý request của Nginx để đọc và áp dụng rules ngay lập tức tại cấp thư mục.
+- **Tầng Tương thích `.htaccess` Native:** Viết hoàn toàn bằng ngôn ngữ C ([`ngx_http_htaccess_module`](ngx_http_htaccess_module)), can thiệp vào vòng đời xử lý request của Nginx để đọc và áp dụng rules ngay lập tức tại cấp thư mục.
 - **Không phụ thuộc DLL ngoài (100% Static Linking):** Đã nhúng tĩnh hoàn toàn `libssl_static.lib`, `libcrypto_static.lib`, `pcre2-8-static.lib`, `zlibstatic.lib`. Không lo thiếu file DLL hoặc xung đột phiên bản OpenSSL có sẵn trên hệ điều hành máy trạm.
 - **Tích hợp đầy đủ mọi Module (All-in-One):** Đầy đủ 99 module: HTTP/2, SSL/TLS với SNI, Stream TCP/UDP proxy (kèm SSL & SNI Preread), Mail proxy (kèm SSL), WebDAV, MP4/FLV media streaming, Gunzip, Gzip Static, Secure Link, Auth Request, Upstream Zone,...
 - **Native Windows Service:** Nginx master process giao tiếp trực tiếp với Windows Service Control Manager (SCM). Xử lý trơn tru các tín hiệu start/stop/restart, loại bỏ lỗi crash exit code 1.
@@ -179,11 +179,12 @@ WinNginx/
 ├── nginx-1.31.8-bin/              # Thư mục phân phối và chạy trực tiếp (Không cần kèm DLL)
 │   ├── nginx.exe                  # Nginx binary 64-bit (Standalone tĩnh)
 │   ├── nginx_x86.exe              # Nginx binary 32-bit (Standalone tĩnh)
-│   ├── conf/                      # Cấu hình chính
+│   ├── conf/                      # Cấu hình chính đang hoạt động
 │   │   ├── nginx.conf
 │   │   ├── mime.types
 │   │   ├── sites-available/       # Khai báo Virtual Hosts
 │   │   └── sites-enabled/         # Virtual Hosts đang kích hoạt
+│   ├── conf-examples/             # Thư viện cấu hình mẫu chuẩn tối ưu (reverse proxy, PHP,...)
 │   ├── html/                      # Thư mục web gốc
 │   ├── logs/                      # Access & Error log
 │   ├── temp/                      # Bộ nhớ đệm tạm

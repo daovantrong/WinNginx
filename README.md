@@ -13,7 +13,7 @@ A heavily modified, enterprise-grade, highly optimized build of **Nginx (1.31.8)
 
 ## 🚀 Key Features
 
-* **Native `.htaccess` Parsing:** Written entirely in C as an internal Nginx module ([`ngx_http_htaccess_module`](file:///D:/WinNginx/ngx_http_htaccess_module)). Intercepts Nginx execution phases to parse and enforce rules directly at the directory level.
+* **Native `.htaccess` Parsing:** Written entirely in C as an internal Nginx module ([`ngx_http_htaccess_module`](ngx_http_htaccess_module)). Intercepts Nginx execution phases to parse and enforce rules directly at the directory level.
 * **100% Standalone Single Executable (Zero External DLLs):** OpenSSL 3.5.7, PCRE2 10.45, and zlib 1.3.1 are statically linked directly into the binary (`libssl_static.lib`, `libcrypto_static.lib`, `pcre2-8-static.lib`, `zlibstatic.lib`). No external DLLs (such as `libcrypto-3-x64.dll` or `libssl-3-x64.dll`) are required. Simply copy `nginx.exe` and run anywhere on Windows.
 * **All-in-One Enterprise Module Integration:** Complete module suite compiled into both 64-bit and 32-bit binaries, including HTTP/2, SSL/TLS with SNI, Stream TCP/UDP proxy (with SSL & SNI Preread), Mail proxy (with SSL), WebDAV, MP4/FLV streaming, Gunzip, Gzip Static, Secure Link, Auth Request, Upstream Zone, and more.
 * **Native Windows Service Integration:** The Nginx master process communicates directly with the Windows Service Control Manager (SCM). Supports graceful start, stop, and restart without process crashes or exit code 1.
@@ -178,11 +178,12 @@ WinNginx/
 ├── nginx-1.31.8-bin/              # Output & runtime distribution folder (Zero DLL dependencies)
 │   ├── nginx.exe                  # Compiled Nginx x64 binary (Static Standalone)
 │   ├── nginx_x86.exe              # Compiled Nginx x86 binary (Static Standalone)
-│   ├── conf/                      # Configuration files
+│   ├── conf/                      # Active runtime configuration
 │   │   ├── nginx.conf
 │   │   ├── mime.types
 │   │   ├── sites-available/       # Virtual Host definitions
 │   │   └── sites-enabled/         # Active Virtual Hosts
+│   ├── conf-examples/             # Production-ready configuration templates (reverse proxy, PHP, etc.)
 │   ├── html/                      # Default Web Root
 │   ├── logs/                      # Access and Error Logs
 │   ├── temp/                      # Temp runtime buffers
