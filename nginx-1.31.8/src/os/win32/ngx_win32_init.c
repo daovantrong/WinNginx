@@ -9,6 +9,14 @@
 #include <ngx_core.h>
 #include <nginx.h>
 
+#if defined(_WIN32) && !defined(_WIN64) && defined(_MSC_VER)
+#pragma comment(linker, "/alternatename:__dtoul3_legacy=___dtoul3_legacy")
+unsigned __int64 __dtoul3_legacy(double d)
+{
+    return (unsigned __int64) d;
+}
+#endif
+
 
 ngx_uint_t  ngx_win32_version;
 ngx_uint_t  ngx_ncpu;

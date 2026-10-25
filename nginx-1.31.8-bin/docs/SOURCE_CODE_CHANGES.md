@@ -1,12 +1,13 @@
 # Phụ lục: Các thay đổi từ mã nguồn gốc đến khi biên dịch thành công
+### **Phiên bản Nginx: 1.31.8 (Enhanced by TRONG.PRO)**
 
-Tài liệu này ghi chú chi tiết từng dòng code đã được thêm, sửa, xoá từ mã nguồn gốc của Nginx 1.31.3 và module `.htaccess` cho đến khi dự án biên dịch thành công mà không còn lỗi.
+Tài liệu này ghi chú chi tiết từng dòng code đã được thêm, sửa, xoá từ mã nguồn gốc của Nginx 1.31.8 và module `.htaccess` cho đến khi dự án biên dịch thành công mà không còn lỗi.
 
 ---
 
 ## 1. Sửa lỗi vòng lặp `WSASend` trên Windows (Nginx Core)
-**File**: `nginx-1.31.3/src/core/ngx_output_chain.c`
-**Lý do**: Trên hệ thống không hỗ trợ `TransmitFile` (Windows `NGX_HAVE_SENDFILE = 0`), cờ `sendfile on;` vẫn khiến Nginx đẩy các pure file buffer vào Windows socket. Điều này dẫn đến treo vòng lặp. Cần ép tắt sendfile.
+**File**: `nginx-1.31.8/src/core/ngx_output_chain.c`
+**Lý do**: Trên hệ thống không hỗ trợ `TransmitFile` (Windows `NGX_HAVE_SENDFILE = 0`), cờ `sendfile on;` vẫn khiến Nginx đẩy các pure file buffer vào Windows socket. Điều này dẫn đến treo vòng lặp vô hạn. Cần ép tắt sendfile ở mức lõi.
 
 **Thay đổi (Diff)**:
 ```diff
@@ -27,50 +28,29 @@ Tài liệu này ghi chú chi tiết từng dòng code đã được thêm, sử
 ---
 
 ## 2. Sửa lỗi treo xuất thư mục Autoindex (Nginx Core / Build Config)
-**File**: `nginx-1.31.3/objs/ngx_modules.c`
+**File**: `nginx-1.31.8/objs/ngx_modules.c`
 **Lý do**: Thứ tự các HTTP Filter Module được công cụ MSVC tạo ra bị ngược, khiến `ngx_http_header_filter_module` khởi tạo cuối cùng và ghi đè mất `ngx_http_chunked_filter_module`.
 
-**Thay đổi**: Sắp xếp lại thứ tự khai báo trong 2 mảng `ngx_modules` và `ngx_module_names` bằng cách dời toàn bộ các HTTP modules bình thường lên trên, và đẩy các **HTTP Filter Module** xuống dưới cùng theo đúng thứ tự chuẩn.
+**Thay đổi**: Sắp xếp lại thứ tự khai báo trong 2 mảng `ngx_modules` và `ngx_module_names` bằng cách dời toàn bộ các HTTP modules bình thường lên trên, và đẩy các **HTTP Filter Module** xuống dưới cùng theo đúng thứ tự chuẩn (Forward Order).
 
-**Mảng `ngx_modules`**:
-```diff
--    &ngx_http_gzip_filter_module,
-     &ngx_http_gzip_static_module,
--    &ngx_http_sub_filter_module,
--    &ngx_http_addition_filter_module,
--    &ngx_http_charset_filter_module,
--    &ngx_http_ssi_filter_module,
--    &ngx_http_userid_filter_module,
--    &ngx_http_headers_filter_module,
--    &ngx_http_copy_filter_module,
--    &ngx_http_range_header_filter_module,
--    &ngx_http_not_modified_filter_module,
-     &ngx_http_v2_module,
--    &ngx_http_v2_filter_module,
--    &ngx_http_chunked_filter_module,
--    &ngx_http_slice_filter_module,
--    &ngx_http_write_filter_module,
--    &ngx_http_header_filter_module,
-     &ngx_http_browser_module,
-     ...
-     &ngx_http_htaccess_module,
-+    &ngx_http_write_filter_module,
-+    &ngx_http_header_filter_module,
-+    &ngx_http_chunked_filter_module,
-+    &ngx_http_v2_filter_module,
-+    &ngx_http_range_header_filter_module,
-+    &ngx_http_gzip_filter_module,
-+    &ngx_http_ssi_filter_module,
-+    &ngx_http_charset_filter_module,
-+    &ngx_http_sub_filter_module,
-+    &ngx_http_addition_filter_module,
-+    &ngx_http_userid_filter_module,
-+    &ngx_http_headers_filter_module,
-+    &ngx_http_copy_filter_module,
-+    &ngx_http_not_modified_filter_module,
-+    &ngx_http_slice_filter_module,
-     NULL
- };
+```c
+    &ngx_http_write_filter_module,
+    &ngx_http_header_filter_module,
+    &ngx_http_chunked_filter_module,
+    &ngx_http_v2_filter_module,
+    &ngx_http_range_header_filter_module,
+    &ngx_http_gzip_filter_module,
+    &ngx_http_ssi_filter_module,
+    &ngx_http_charset_filter_module,
+    &ngx_http_sub_filter_module,
+    &ngx_http_addition_filter_module,
+    &ngx_http_userid_filter_module,
+    &ngx_http_headers_filter_module,
+    &ngx_http_copy_filter_module,
+    &ngx_http_not_modified_filter_module,
+    &ngx_http_slice_filter_module,
+    NULL
+};
 ```
 
 ---
@@ -89,7 +69,6 @@ if (curr_ast->error_documents && curr_ast->error_documents->nelts > 0) {
     ngx_http_core_loc_conf_t *new_clcf = ngx_palloc(r->pool, sizeof(ngx_http_core_loc_conf_t));
     if (new_clcf != NULL) {
         *new_clcf = *clcf;
-        // ... (Sao chép và đẩy cấu hình ErrorDocument vào mảng error_pages)
         
         void **new_loc_conf = ngx_palloc(r->pool, sizeof(void *) * ngx_http_max_module);
         if (new_loc_conf != NULL) {
@@ -117,23 +96,6 @@ if (curr_ast->options.indexes != -1) {
     }
 }
 ```
-
-**Sửa lỗi vòng lặp ngoặc nhọn (Syntax C1075)**:
-Đã bổ sung 2 dấu đóng ngoặc `}` bị thiếu trước nhãn (label) `execute_rules:` cho các lệnh `if` và `for` của khối `DirectoryIndex`.
-
-```diff
-                     }
-                 }
-             }
-+        }
-+    }
- execute_rules:
-     ngx_log_error(NGX_LOG_ERR, r->connection->log, 0, "htaccess: entered execute_rules");
-```
-
----
-
-Với 3 thay đổi trọng tâm này, Nginx compiler (NMAKE) đã vượt qua toàn bộ cảnh báo lỗi cú pháp và xuất ra file `nginx.exe` hoàn chỉnh. Các module tùy chỉnh giờ đây kết nối mượt mà với lõi Nginx mà không gây treo tiến trình Worker.
 
 ---
 
@@ -171,11 +133,9 @@ for (j = 0; j < 30; j++) {
 
 **Thay đổi**:
 1. **Integer Underflow trong cắt chuỗi `normalized_path`**:
-   - Mã cũ sử dụng hardcode `normalized_path.len - 10` với giả định file luôn tên là `.htaccess`. Nếu người dùng đổi cấu hình `htaccess_filename` thành một tên ngắn hơn (vd `.conf`), phép trừ sẽ gây underflow (`size_t` cuộn ngược lên số khổng lồ). Điều này dẫn đến lệnh `ngx_cpymem` copy văng khỏi phân vùng bộ nhớ và làm Crash Nginx.
-   - **Đã vá**: Đổi thành `size_t strip_len = hlcf->filename.len + 1;` và luôn check `if (normalized_path.len > strip_len)` trước khi tính toán độ dài `dir_len`.
+   - Sử dụng `size_t strip_len = hlcf->filename.len + 1;` và luôn check `if (normalized_path.len > strip_len)` trước khi tính toán độ dài `dir_len`.
 2. **Xóa biến mảng Regex (Regex Capture Leakage)**:
-   - Trong `RewriteCond` (file `condition.c`), mảng `cond_captures` chứa index của regex group (`%1`, `%2`...) chỉ được fill `-1` ở ĐẦU vòng lặp. Nghĩa là Condition 2 có thể mượn lại capture group của Condition 1 nếu Condition 2 không match, dẫn đến đọc sai bộ nhớ ở bước RewriteRule.
-   - **Đã vá**: Đẩy lệnh `for (j = 0; j < 30; j++) cond_captures[j] = -1;` vào ngay phía trên lệnh `ngx_regex_exec` để đảm bảo State của Regex luôn trong sạch cho mỗi Condition độc lập.
+   - Trong `RewriteCond` (file `condition.c`), đẩy lệnh `for (j = 0; j < 30; j++) cond_captures[j] = -1;` vào ngay phía trên lệnh `ngx_regex_exec` để đảm bảo State của Regex luôn trong sạch cho mỗi Condition độc lập.
 
 ---
 
@@ -187,5 +147,60 @@ for (j = 0; j < 30; j++) {
 2. Tạo thêm hệ thống script build song song:
    - `prepare_deps_x86.ps1`: Tải và tự động biên dịch `PCRE2`, `Zlib`, và cài đặt `OpenSSL` dành riêng cho hệ x86/Win32.
    - `build_nginx_x86.bat`: Khởi tạo môi trường MSVC `vcvarsall x86` để build file nhị phân tĩnh.
-3. Chỉnh sửa tệp dự án Visual Studio (`nginx.sln`, `nginx.vcxproj`) để cấu hình `AdditionalDependencies` ánh xạ động sang thư mục thư viện tương ứng (Win32 -> `_x86` / x64 -> `_x64`).
+3. Chỉnh sửa tệp dự án Visual Studio (`vs/nginx.sln`, `vs/nginx.vcxproj`) để cấu hình `AdditionalDependencies` ánh xạ động sang thư mục thư viện tương ứng (Win32 -> `_x86` / x64 -> `_x64`).
 4. Kết quả xuất xưởng 2 file nhị phân: `nginx.exe` (64-bit) và `nginx_x86.exe` (32-bit).
+
+---
+
+## 8. Sửa lỗi Crash Dump `0xC0000005` khi cấu hình `listen 443 ssl`
+**File**: `nginx-1.31.8/objs/ngx_modules.c`
+**Lý do**: Khi thêm directive `listen 443 ssl;` và `ssl_certificate` vào khối `server`, NGINX bị crash tại offset `0x3002e` (Access Violation `0xC0000005`). Nguyên nhân do mảng `ngx_modules[]` thiếu khai báo `&ngx_http_ssl_module;`, khiến con trỏ `ctx_index` của SSL module không được khởi tạo (giữ giá trị `-1`), làm lệch con trỏ cấu hình khi parse directive SSL.
+
+**Thay đổi**:
+1. Khai báo lại `extern ngx_module_t ngx_http_ssl_module;`.
+2. Thêm lại `&ngx_http_ssl_module,` vào mảng `ngx_modules[]`.
+
+---
+
+## 9. Tích hợp All-in-One 99 Module
+**File**: `vs/nginx.vcxproj`, `vs/nginx.vcxproj.filters`, `nginx-1.31.8/objs/ngx_modules.c`
+**Lý do**: Cung cấp đầy đủ toàn bộ tính năng cao cấp của NGINX cho Windows tương đương các bản Linux Enterprise:
+- **HTTP Layer**: HTTP/2, SSL SNI, WebDAV, MP4, FLV, Gunzip, Gzip Static, Auth Request, Secure Link, Slice, Addition, Sub, RealIP, Upstream Zone.
+- **Stream Layer**: Proxy TCP/UDP, Stream SSL, Stream RealIP, Stream SSL Preread (SNI routing), Stream Upstream Zone.
+- **Mail Layer**: Proxy POP3, IMAP, SMTP có mã hóa SSL.
+
+---
+
+## 10. Tùy biến Banner Phiên bản & PE Resource Info
+**File**: `nginx-1.31.8/objs/ngx_auto_config.h`, `nginx-1.31.8/src/os/win32/nginx.rc`
+**Thay đổi**:
+1. Macro `NGX_BUILD`:
+   ```c
+   #ifndef NGX_BUILD
+   #define NGX_BUILD  "Enhanced by TRONG.PRO"
+   #endif
+   ```
+   Giúp lệnh `nginx -V` hiển thị đúng chuẩn: `nginx version: nginx/1.31.8 (Enhanced by TRONG.PRO)`.
+2. Cập nhật tài nguyên Windows `.rc`: Đặt `CompanyName` là `TRONG.PRO`, thêm thông tin giới thiệu dự án trong trường `Comments` của PE Header.
+
+---
+
+## 11. Liên kết tĩnh toàn phần OpenSSL 3.5.7 (Zero External DLLs)
+**File**: `vs/nginx.vcxproj`, `nginx-1.31.8/src/os/win32/ngx_win32_init.c`
+**Lý do**: Trước đây NGINX phụ thuộc vào `libcrypto-3-x64.dll` và `libssl-3-x64.dll`. Nếu mang sang máy khác không có sẵn OpenSSL trong PATH, NGINX sẽ báo lỗi thiếu DLL.
+
+**Thay đổi**:
+1. Trong `vs/nginx.vcxproj`, chuyển liên kết sang các static library:
+   - x64: `libssl_static.lib`, `libcrypto_static.lib`
+   - Win32: `libssl_static.lib`, `libcrypto_static.lib`
+2. Bổ sung Intrinsic stub cho x86 MSVC CRT trong `ngx_win32_init.c`:
+   ```c
+   #if defined(_WIN32) && !defined(_WIN64) && defined(_MSC_VER)
+   #pragma comment(linker, "/alternatename:__dtoul3_legacy=___dtoul3_legacy")
+   unsigned __int64 __dtoul3_legacy(double d)
+   {
+       return (unsigned __int64) d;
+   }
+   #endif
+   ```
+3. Kết quả: Toàn bộ OpenSSL 3.5.7, PCRE2 10.45 và zlib 1.3.1 đều được nhúng tĩnh trực tiếp vào file `.exe`. File nhị phân đạt chuẩn Single Standalone Executable, chạy độc lập không cần bất kỳ file DLL bên ngoài nào.

@@ -1,6 +1,7 @@
 # Nginx Windows `.htaccess` Compatibility Layer & Developer Guide
+### **Phiên bản Nginx: 1.31.8 (Enhanced by TRONG.PRO)**
 
-Tài liệu này ghi chú chi tiết kiến trúc, các vấn đề gặp phải, cách giải quyết và các bản vá lỗi native trên Nginx Windows (phiên bản 1.31.3) trong quá trình phát triển Nginx `.htaccess` Compatibility Module. Mục đích là để các lập trình viên dễ dàng tra cứu, nâng cấp và maintain source code trong tương lai.
+Tài liệu này ghi chú chi tiết kiến trúc, các vấn đề gặp phải, cách giải quyết và các bản vá lỗi native trên Nginx Windows (phiên bản 1.31.8) trong quá trình phát triển Nginx `.htaccess` Compatibility Module và tích hợp gói All-in-One Modules. Mục đích là để các lập trình viên dễ dàng tra cứu, nâng cấp và maintain source code trong tương lai.
 
 ---
 
@@ -39,14 +40,13 @@ Module `ngx_http_htaccess_module` được thiết kế để phân tích và th
 
 ## 3. Các Lỗi Native Nginx Core trên Windows (Bugs & Patches)
 
-Trong quá trình test file tĩnh và hiển thị thư mục (Autoindex), đã phát hiện **2 bug nghiêm trọng từ chính bản thân mã nguồn lõi của Nginx Windows 1.31.3** (không liên quan đến module htaccess). Dưới đây là thông tin và cách vá khi update Nginx lên bản mới:
+Trong quá trình phát triển và hoàn thiện, đã giải quyết **4 lỗi quan trọng** từ mã nguồn gốc và cấu hình sinh tự động:
 
 ### Bug 1: Treo vòng lặp vô hạn `WSASend` (Sendfile Bug)
 - **Triệu chứng**: Khi cấu hình `sendfile on;` được kích hoạt trong `nginx.conf`, việc gọi các file tĩnh dung lượng lớn khiến kết nối Nginx bị treo vĩnh viễn (Infinite loop).
-- **Nguyên nhân**: Nginx Windows 1.31.3 nội bộ đã vô hiệu hoá hàm `TransmitFile` native (`NGX_HAVE_SENDFILE = 0`). Tuy nhiên, do cờ `sendfile on;` vẫn được đọc bình thường, hàm `ngx_output_chain_as_is` lọt các buffer có cờ `in_file=1` xuống socket writer của Windows (`ngx_wsasend_chain`). Socket này chỉ nhận memory buffer, dẫn đến việc tính toán độ dài dữ liệu `size = 0` và rơi vào vòng lặp lặp lại mãi mãi.
-- **Bản vá (Cách nâng cấp/Fix)**:
+- **Nguyên nhân**: Nginx Windows nội bộ đã vô hiệu hoá hàm `TransmitFile` native (`NGX_HAVE_SENDFILE = 0`). Tuy nhiên, do cờ `sendfile on;` vẫn được đọc bình thường, hàm `ngx_output_chain_as_is` lọt các buffer có cờ `in_file=1` xuống socket writer của Windows (`ngx_wsasend_chain`). Socket này chỉ nhận memory buffer, dẫn đến việc tính toán độ dài dữ liệu `size = 0` và rơi vào vòng lặp vô hạn.
+- **Bản vá**:
   Sửa trong file `src/core/ngx_output_chain.c` (Hàm `ngx_output_chain_as_is`):
-  Cần tiêm cấu trúc `#if !(NGX_HAVE_SENDFILE)` để ép vô hiệu hoá `sendfile`.
   ```c
       sendfile = ctx->sendfile;
 
@@ -60,8 +60,8 @@ Trong quá trình test file tĩnh và hiển thị thư mục (Autoindex), đã 
 ### Bug 2: Lỗi sập luồng hiển thị Autoindex (Thiếu Filter Chunked)
 - **Triệu chứng**: Trình duyệt hoặc lệnh `curl` bị treo cứng (hang) không bao giờ kết thúc response khi hiển thị danh sách thư mục (`Options +Indexes`).
 - **Nguyên nhân**: Phản hồi HTTP thiếu header `Transfer-Encoding: chunked`. Lý do sâu xa nằm ở **thứ tự khởi tạo các filter** trong file sinh tự động của MSVC (`objs/ngx_modules.c`). Trình tự filter module bị sắp xếp ngược (backward). Module `ngx_http_header_filter_module` nằm bét bảng, do đó nó khởi tạo cuối cùng, ghi đè biến con trỏ filter `ngx_http_top_header_filter` và tước bỏ tất cả filter đứng trước nó (bao gồm cả chunked module).
-- **Bản vá (Cách nâng cấp/Fix)**:
-  Khi dùng lệnh gen project cho Windows, phải can thiệp vào `objs/ngx_modules.c`. Cần sắp xếp mảng `ngx_modules[]` và `ngx_module_names[]` để các HTTP filter chạy đúng quy trình tiêu chuẩn (Forward Order). Đặc biệt, `header_filter` phải đứng gần trên cùng:
+- **Bản vá**:
+  Sắp xếp lại mảng `ngx_modules[]` và `ngx_module_names[]` trong `objs/ngx_modules.c` để các HTTP filter chạy đúng quy trình tiêu chuẩn (Forward Order):
   ```c
     &ngx_http_write_filter_module,
     &ngx_http_header_filter_module,
@@ -71,15 +71,33 @@ Trong quá trình test file tĩnh và hiển thị thư mục (Autoindex), đã 
     &ngx_http_slice_filter_module,
   ```
 
+### Bug 3: Crash Dump `0xC0000005` khi cấu hình `listen 443 ssl`
+- **Triệu chứng**: Khi thêm directive `listen 443 ssl;` và `ssl_certificate` vào khối `server`, NGINX bị crash sập ngay lập tức (Crash dump 0xC0000005 tại offset 0x3002e).
+- **Nguyên nhân**: Trong quá trình tùy biến lại mảng `ngx_modules[]` trong `objs/ngx_modules.c`, khai báo con trỏ `&ngx_http_ssl_module;` bị thiếu. Điều này khiến `ctx_index` của SSL module không được gán (giữ giá trị `-1`). Khi parse khối lệnh `ssl_certificate`, NGINX truy xuất con trỏ cấu hình bị lệch và gặp lỗi bộ nhớ.
+- **Bản vá**: Thêm lại khai báo `extern ngx_module_t ngx_http_ssl_module;` và đưa `&ngx_http_ssl_module,` vào đúng vị trí trong mảng `ngx_modules[]`.
+
+### Bug 4: Link Tĩnh OpenSSL 3.5.7 Không Cần DLL (Static Standalone)
+- **Triệu chứng**: Nginx phụ thuộc vào `libcrypto-3-x64.dll` và `libssl-3-x64.dll` khi dùng import library mặc định (`libcrypto.lib` / `libssl.lib`).
+- **Giải pháp**:
+  - Chuyển cấu hình MSVC trong [`vs/nginx.vcxproj`](file:///D:/WinNginx/vs/nginx.vcxproj) sang liên kết tĩnh trực tiếp với `libssl_static.lib` và `libcrypto_static.lib`.
+  - Trên x86 Win32, trình biên dịch thiếu symbol CRT `__dtoul3_legacy`. Đã bổ sung alias/stub trong [`src/os/win32/ngx_win32_init.c`](file:///D:/WinNginx/nginx-1.31.8/src/os/win32/ngx_win32_init.c):
+    ```c
+    #if defined(_WIN32) && !defined(_WIN64) && defined(_MSC_VER)
+    #pragma comment(linker, "/alternatename:__dtoul3_legacy=___dtoul3_legacy")
+    unsigned __int64 __dtoul3_legacy(double d)
+    {
+        return (unsigned __int64) d;
+    }
+    #endif
+    ```
+  - Kết quả: File nhị phân `nginx.exe` và `nginx_x86.exe` hoàn toàn độc lập, không cần bất kỳ file DLL nào đi kèm.
+
 ---
 
-## 4. Hướng dẫn Compile & Build Nginx
-- **Môi trường**: MSVC 2019/2022 (Visual Studio C++ Build Tools).
-- **Thư mục source**: `c:\nginx_x64\`
+## 4. Hướng dẫn Biên dịch & Quản lý Dự án
+- **Môi trường**: MSVC 2019 / 2022 (Visual Studio C++ Build Tools).
+- **Thư mục source**: `D:\WinNginx\`
 - **Cách Build**:
-  Chạy lệnh `build_nginx_x64.bat` trong command prompt hoặc powershell.
-  ```cmd
-  cd c:\nginx_x64\
-  build_nginx_x64.bat
-  ```
-- **Kết quả Build**: Nằm ở `c:\nginx_x64\build\Release\nginx.exe`.
+  - **Bản 64-bit**: Chạy `build_nginx_x64.bat` -> Xuất ra `D:\WinNginx\nginx-1.31.8-bin\nginx.exe`.
+  - **Bản 32-bit**: Chạy `build_nginx_x86.bat` -> Xuất ra `D:\WinNginx\nginx-1.31.8-bin\nginx_x86.exe`.
+- **Dọn dẹp Git**: Chạy `clean.bat` trước khi commit để quét sạch toàn bộ `*.obj`, `*.pdb`, `build/`.

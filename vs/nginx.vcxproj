@@ -139,8 +139,8 @@
       <AdditionalDependencies>
         $(Pcre2Dir)\lib\pcre2-8-static.lib;
         $(ZlibDir)\lib\zlibstatic.lib;
-        $(OpenSslDir)\lib\VC\x64\MT\libssl.lib;
-        $(OpenSslDir)\lib\VC\x64\MT\libcrypto.lib;
+        $(OpenSslDir)\lib\VC\x64\MD\libssl_static.lib;
+        $(OpenSslDir)\lib\VC\x64\MD\libcrypto_static.lib;
         kernel32.lib;
         user32.lib;
         ws2_32.lib;
@@ -280,7 +280,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>$(DepsDir)\pcre2_x86\lib\pcre2-8-static.lib;$(DepsDir)\zlib_x86\lib\zlibstatic.lib;$(DepsDir)\openssl_x86\lib\VC\x86\MT\libssl.lib;$(DepsDir)\openssl_x86\lib\VC\x86\MT\libcrypto.lib;kernel32.lib;user32.lib;ws2_32.lib;mswsock.lib;advapi32.lib;crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(DepsDir)\pcre2_x86\lib\pcre2-8-static.lib;$(DepsDir)\zlib_x86\lib\zlibstatic.lib;$(DepsDir)\openssl_x86\lib\VC\x86\MD\libssl_static.lib;$(DepsDir)\openssl_x86\lib\VC\x86\MD\libcrypto_static.lib;kernel32.lib;user32.lib;ws2_32.lib;mswsock.lib;advapi32.lib;crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ResourceCompile>
       <AdditionalIncludeDirectories>
@@ -346,7 +346,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>$(DepsDir)\pcre2_x86\lib\pcre2-8-static.lib;$(DepsDir)\zlib_x86\lib\zlibstatic.lib;$(DepsDir)\openssl_x86\lib\VC\x86\MT\libssl.lib;$(DepsDir)\openssl_x86\lib\VC\x86\MT\libcrypto.lib;kernel32.lib;user32.lib;ws2_32.lib;mswsock.lib;advapi32.lib;crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(DepsDir)\pcre2_x86\lib\pcre2-8-static.lib;$(DepsDir)\zlib_x86\lib\zlibstatic.lib;$(DepsDir)\openssl_x86\lib\VC\x86\MD\libssl_static.lib;$(DepsDir)\openssl_x86\lib\VC\x86\MD\libcrypto_static.lib;kernel32.lib;user32.lib;ws2_32.lib;mswsock.lib;advapi32.lib;crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ResourceCompile>
       <AdditionalIncludeDirectories>
@@ -586,3 +586,4 @@
   <ImportGroup Label="ExtensionTargets" />
 
 </Project>
+
