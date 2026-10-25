@@ -1,9 +1,9 @@
 /* auto generated for nginx-1.31.8 Windows MSVC build */
 
-#define NGX_CONFIGURE " --with-pcre --with-zlib --with-openssl --with-http_ssl_module --with-http_v2_module"
+#define NGX_CONFIGURE " --with-pcre --with-zlib --with-openssl --with-http_v2_module --with-http_ssl_module --with-http_realip_module --with-http_addition_module --with-http_sub_module --with-http_dav_module --with-http_stub_status_module --with-http_flv_module --with-http_mp4_module --with-http_gunzip_module --with-http_gzip_static_module --with-http_auth_request_module --with-http_random_index_module --with-http_secure_link_module --with-http_slice_module --with-mail --with-mail_ssl_module --with-stream --with-stream_ssl_module --with-stream_realip_module --with-stream_ssl_preread_module"
 
 #define NGX_COMPILER   "MSVC 19.29"
-#define NGX_BUILD      ""
+#define NGX_BUILD      "Enhanced by TRONG.PRO"
 
 #define NGX_HAVE_INT_SET_ERRNO  0
 
@@ -118,10 +118,17 @@
 #define NGX_HTTP_V2  1
 #define NGX_HTTP_V3  0
 
-#define NGX_MAIL  0
-#define NGX_STREAM  0
+#define NGX_MAIL  1
+#define NGX_MAIL_SSL  1
+#define NGX_STREAM  1
+#define NGX_STREAM_SSL  1
+#define NGX_STREAM_REALIP  1
+#define NGX_STREAM_SSL_PREREAD  1
+#define NGX_STREAM_UPSTREAM_ZONE  1
 
-#define NGX_STAT_STUB  0
+#define NGX_STAT_STUB  1
+#define NGX_HTTP_DAV  1
+#define NGX_HTTP_UPSTREAM_ZONE  1
 
 #define NGX_PREFIX  ""
 #define NGX_CONF_PREFIX  "conf/"

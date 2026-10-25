@@ -184,6 +184,150 @@
     <ClCompile Include="$(NginxSrcDir)\src\http\v2\ngx_http_v2_module.c"><Filter>http\v2</Filter></ClCompile>
 
     <!-- objs -->
+        <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_stub_status_module.c">
+      <Filter>Source Files\http</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_gunzip_filter_module.c">
+      <Filter>Source Files\http</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_secure_link_module.c">
+      <Filter>Source Files\http</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_mp4_module.c">
+      <Filter>Source Files\http</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_flv_module.c">
+      <Filter>Source Files\http</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_random_index_module.c">
+      <Filter>Source Files\http</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_dav_module.c">
+      <Filter>Source Files\http</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_upstream_zone_module.c">
+      <Filter>Source Files\http</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\http\modules\ngx_http_grpc_module.c">
+      <Filter>Source Files\http</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\mail\ngx_mail.c">
+      <Filter>Source Files\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\mail\ngx_mail_core_module.c">
+      <Filter>Source Files\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\mail\ngx_mail_handler.c">
+      <Filter>Source Files\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\mail\ngx_mail_parse.c">
+      <Filter>Source Files\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\mail\ngx_mail_ssl_module.c">
+      <Filter>Source Files\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\mail\ngx_mail_pop3_module.c">
+      <Filter>Source Files\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\mail\ngx_mail_pop3_handler.c">
+      <Filter>Source Files\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\mail\ngx_mail_imap_module.c">
+      <Filter>Source Files\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\mail\ngx_mail_imap_handler.c">
+      <Filter>Source Files\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\mail\ngx_mail_smtp_module.c">
+      <Filter>Source Files\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\mail\ngx_mail_smtp_handler.c">
+      <Filter>Source Files\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\mail\ngx_mail_auth_http_module.c">
+      <Filter>Source Files\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\mail\ngx_mail_proxy_module.c">
+      <Filter>Source Files\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\mail\ngx_mail_realip_module.c">
+      <Filter>Source Files\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\stream\ngx_stream.c">
+      <Filter>Source Files\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\stream\ngx_stream_variables.c">
+      <Filter>Source Files\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\stream\ngx_stream_script.c">
+      <Filter>Source Files\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\stream\ngx_stream_handler.c">
+      <Filter>Source Files\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\stream\ngx_stream_core_module.c">
+      <Filter>Source Files\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\stream\ngx_stream_log_module.c">
+      <Filter>Source Files\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\stream\ngx_stream_proxy_module.c">
+      <Filter>Source Files\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\stream\ngx_stream_upstream.c">
+      <Filter>Source Files\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\stream\ngx_stream_upstream_round_robin.c">
+      <Filter>Source Files\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\stream\ngx_stream_write_filter_module.c">
+      <Filter>Source Files\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\stream\ngx_stream_ssl_module.c">
+      <Filter>Source Files\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\stream\ngx_stream_realip_module.c">
+      <Filter>Source Files\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\stream\ngx_stream_limit_conn_module.c">
+      <Filter>Source Files\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\stream\ngx_stream_access_module.c">
+      <Filter>Source Files\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\stream\ngx_stream_geo_module.c">
+      <Filter>Source Files\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\stream\ngx_stream_map_module.c">
+      <Filter>Source Files\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\stream\ngx_stream_split_clients_module.c">
+      <Filter>Source Files\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\stream\ngx_stream_return_module.c">
+      <Filter>Source Files\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\stream\ngx_stream_set_module.c">
+      <Filter>Source Files\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\stream\ngx_stream_pass_module.c">
+      <Filter>Source Files\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\stream\ngx_stream_upstream_hash_module.c">
+      <Filter>Source Files\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\stream\ngx_stream_upstream_least_conn_module.c">
+      <Filter>Source Files\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\stream\ngx_stream_upstream_random_module.c">
+      <Filter>Source Files\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\stream\ngx_stream_upstream_zone_module.c">
+      <Filter>Source Files\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="$(NginxSrcDir)\src\stream\ngx_stream_ssl_preread_module.c">
+      <Filter>Source Files\stream</Filter>
+    </ClCompile>
     <ClCompile Include="$(NginxObjsDir)\ngx_modules.c"><Filter>objs</Filter></ClCompile>
   </ItemGroup>
 
